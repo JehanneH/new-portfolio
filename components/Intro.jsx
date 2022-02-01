@@ -11,7 +11,7 @@ const Intro = () => {
       <button className={styles.button}>Projects</button>
     </div>
     <div className={styles.card}>
-      <Image src="/img/" alt=""/>
+      <Image className={styles.image} src="/img/intro-img.png" layout="fill" alt=""/>
     </div>
   </div>;
 };
