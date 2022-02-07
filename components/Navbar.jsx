@@ -1,5 +1,4 @@
 import Link from "next/link";
-// import styles from "../styles/Navbar.module.css"
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -14,7 +13,6 @@ const Container = styled.div`
 `;
 
 const List = styled.ul`
-
 `
 const ListItem = styled.li`
   display: inline;
@@ -37,8 +35,6 @@ const Navbar = () => {
       <ListItem>
         <Link href="/projects">Projects</Link>
       </ListItem>
-      
-
     </List>
   </Container>;
 };
