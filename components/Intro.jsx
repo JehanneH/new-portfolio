@@ -51,8 +51,7 @@ const StyledImage = styled(Image)`
 
 const Intro = () => {
   return <Container>
-    <Circle backgroundColor="blue" top="-50vh" left="-50vh"/>
-    <Circle backgroundColor="blue" right="-40vh" />
+    
     <Card>
       <Title>
         <ColorPop>Hello.</ColorPop> Welcome to my portfolio blah blah blah

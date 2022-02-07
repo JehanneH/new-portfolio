@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 50px;
-  background: black;
-  color: white;
+  background: transparent;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,7 +18,7 @@ const ListItem = styled.li`
   display: inline;
   margin-right: 30px;
   font-size: 14px;
-  color: lightgrey;
+  color: black;
   cursor: pointer;
 `
 
