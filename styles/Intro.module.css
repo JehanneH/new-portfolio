@@ -2,6 +2,8 @@
   width: 100%;
   height: calc(100vh - 50px); /* height minus the height of nav */
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
 .card {

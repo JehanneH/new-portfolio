@@ -1,8 +1,11 @@
 import Image from "next/image";
 import styles from "../styles/Intro.module.css"
+import Circle from "./Circle";
 
 const Intro = () => {
   return <div className={styles.container}>
+    <Circle backgroundColor="blue" top="-50vh" left="-50vh"/>
+    <Circle backgroundColor="blue" right="-40vh" />
     <div className={styles.card}>
       <h1 className={styles.title}>
         <span className={styles.colorPop}>Hello.</span> Welcome to my portfolio blah blah blah
