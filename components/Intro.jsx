@@ -5,17 +5,25 @@ import styled, { keyframes } from "styled-components";
 const IntroContainer = styled.div`
   display: flex;
   height: 100vh;
-
 `
 
 const IntroLeft = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 const IntroRight = styled.div`
  flex: 1;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 `
 const LeftWrapper = styled.div`
-  padding: 50px;
+  padding: 1rem 20rem 1rem 2rem;
+  height: 50%;
+  border: solid 1px black;
+  border-radius: 10px;
 `
 const Greeting = styled.h2`
  font-size: 30px;
@@ -58,16 +66,14 @@ const TitleItem = styled.div`
   height: 50px;
   font-size: 30px;
   font-weight: bold;
-  color: green;
+  color: lightblue;
   display: flex;
   align-items: center;
 `
 
-
-// this is how you use image
-// const StyledImage = styled(Image)`
-//   object-fit: scale-down;
-// `;
+const StyledImage = styled(Image)`
+  object-fit: cover;
+`;
 
 
 const Intro = () => {
@@ -87,9 +93,11 @@ const Intro = () => {
         </Title>
       </LeftWrapper>
     </IntroLeft>
-    <IntroRight>right</IntroRight>
+    <IntroRight>
+      <StyledImage src="/img/intro-img.png" alt="" width={500} height={500} />
+    </IntroRight>
 
-      {/* <StyledImage src="/img/intro-img.png" layout="fill" alt="" width={500} height={500}/> */}
+      
   </IntroContainer>;
 };
 
