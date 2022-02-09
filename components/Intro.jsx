@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Circle from "./Circle";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const IntroContainer = styled.div`
   display: flex;
@@ -17,17 +17,51 @@ const IntroRight = styled.div`
 const LeftWrapper = styled.div`
   padding: 50px;
 `
-const Title = styled.h2`
- 
+const Greeting = styled.h2`
+ font-size: 30px;
+ font-weight: 300;
 `
 const Name = styled.h1`
- 
+ font-size: 60px;
 `
-const JobWrapper = styled.div``
 
-const JobTitle = styled.div``
+const Title = styled.div`
+  height: 50px;
+  overflow: hidden;
+`
 
-const JobTitleItem = styled.div``
+const scrollAnimation = keyframes`
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+`
+
+const TitleWrapper = styled.div`
+  height: 100%;
+  animation: ${scrollAnimation};
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+`
+
+const TitleItem = styled.div`
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+  display: flex;
+  align-items: center;
+`
 
 
 // this is how you use image
@@ -40,16 +74,17 @@ const Intro = () => {
   return <IntroContainer>
     <IntroLeft>
       <LeftWrapper>
-        <Title>Hello, my name is</Title>
+        <Greeting>Hello, my name is</Greeting>
         <Name>Jehanne Hodge</Name>
-        <JobWrapper>
-          <JobTitle>
-            <JobTitleItem>Web Developer</JobTitleItem>
-            <JobTitleItem>Researcher</JobTitleItem>
-            <JobTitleItem>Creative</JobTitleItem>
-            <JobTitleItem>Organized</JobTitleItem>
-          </JobTitle>
-        </JobWrapper>
+        <Title>
+          <TitleWrapper>
+            <TitleItem>Web Developer</TitleItem>
+            <TitleItem>Researcher</TitleItem>
+            <TitleItem>Creative</TitleItem>
+            <TitleItem>Organized</TitleItem>
+            <TitleItem>Goal Oriented</TitleItem>
+          </TitleWrapper>
+        </Title>
       </LeftWrapper>
     </IntroLeft>
     <IntroRight>right</IntroRight>
