@@ -21,9 +21,13 @@ const IntroRight = styled.div`
 `
 const LeftWrapper = styled.div`
   padding: 1rem 20rem 1rem 2rem;
+  margin-left: 3rem;
   height: 50%;
   border: solid 1px black;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 const Greeting = styled.h2`
  font-size: 30px;
@@ -75,6 +79,18 @@ const StyledImage = styled(Image)`
   object-fit: cover;
 `;
 
+const Scroll = styled.div`
+width: 30px;
+height: 30px;
+position: absolute;
+bottom: 20px;
+left: 50%;
+`
+
+
+
+
+
 
 const Intro = () => {
   return <IntroContainer>
@@ -92,9 +108,10 @@ const Intro = () => {
           </TitleWrapper>
         </Title>
       </LeftWrapper>
+      <Scroll>V</Scroll>
     </IntroLeft>
     <IntroRight>
-      <StyledImage src="/img/intro-img.png" alt="" width={500} height={500} />
+      <StyledImage src="/img/intro-img.png" alt="" width={400} height={400} />
     </IntroRight>
 
       
