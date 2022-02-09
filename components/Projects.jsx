@@ -11,13 +11,8 @@ const ProjectCards = styled.div`
 
 const Projects = () => {
   return (
-    <Container>
-      <Title>Here are some things I've created</Title>
-      <ProjectCards>
-        
-      </ProjectCards>
-    </Container>
-    )
+    <div></div>
+  )
 };
 
 export default Projects;

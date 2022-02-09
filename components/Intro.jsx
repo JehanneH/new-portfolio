@@ -2,67 +2,60 @@ import Image from "next/image";
 import Circle from "./Circle";
 import styled from "styled-components";
 
-const Container = styled.div`
-  width: 100%;
-  height: calc(100vh - 50px); /* height minus the height of nav */
+const IntroContainer = styled.div`
   display: flex;
-  overflow: hidden;
-  position: relative;
+  height: 100vh;
+
 `
 
-const Card = styled.div`
-  flex: 1; /* separates in middle 50/50 */
-  padding: 100px;
-  padding-right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
+const IntroLeft = styled.div`
+  flex: 1;
 `
+const IntroRight = styled.div`
+ flex: 1;
+`
+const LeftWrapper = styled.div`
+  padding: 50px;
+`
+const Title = styled.h2`
+ 
+`
+const Name = styled.h1`
+ 
+`
+const JobWrapper = styled.div``
 
-const Title = styled.h1`
-  font-size: 50px;
-  margin: 0;
-`
-const ColorPop = styled.span`
-  color: lightskyblue;
-`
-const Desc = styled.p`
-  font-size: 20px;
-  margin: 0;
-`
+const JobTitle = styled.div``
 
-const Button = styled.button`
-  border: none;
-  background: lightskyblue;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 100px;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-`
+const JobTitleItem = styled.div``
 
-const StyledImage = styled(Image)`
-  object-fit: scale-down;
-`;
+
+// this is how you use image
+// const StyledImage = styled(Image)`
+//   object-fit: scale-down;
+// `;
 
 
 const Intro = () => {
-  return <Container>
-    
-    <Card>
-      <Title>
-        <ColorPop>Hello.</ColorPop> Welcome to my portfolio blah blah blah
-      </Title>
-      <Desc>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis facilis minus reiciendis perspiciatis, eum quae asperiores vitae doloremque sunt accusantium tenetur illo, nemo id tempore odit quisquam! Sunt, delectus repellendus?</Desc>
-      <Button>Projects</Button>
-    </Card>
-    <Card>
-      <StyledImage src="/img/intro-img.png" layout="fill" alt="" width={500} height={500}/>
-    </Card>
-  </Container>;
+  return <IntroContainer>
+    <IntroLeft>
+      <LeftWrapper>
+        <Title>Hello, my name is</Title>
+        <Name>Jehanne Hodge</Name>
+        <JobWrapper>
+          <JobTitle>
+            <JobTitleItem>Web Developer</JobTitleItem>
+            <JobTitleItem>Researcher</JobTitleItem>
+            <JobTitleItem>Creative</JobTitleItem>
+            <JobTitleItem>Organized</JobTitleItem>
+          </JobTitle>
+        </JobWrapper>
+      </LeftWrapper>
+    </IntroLeft>
+    <IntroRight>right</IntroRight>
+
+      {/* <StyledImage src="/img/intro-img.png" layout="fill" alt="" width={500} height={500}/> */}
+  </IntroContainer>;
 };
 
 export default Intro;
