@@ -12,19 +12,21 @@ const IntroLeft = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5rem;
 `
 const IntroRight = styled.div`
  flex: 1;
  display: flex;
  align-items: center;
  justify-content: center;
+ margin-right: 5rem;
 `
 const LeftWrapper = styled.div`
-  padding: 1rem 20rem 1rem 2rem;
+  padding: 20px;
   margin-left: 3rem;
   height: 50%;
-  border: solid 1px black;
-  border-radius: 10px;
+  /* border: solid 1px black;
+  border-radius: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,8 +88,6 @@ position: absolute;
 bottom: 20px;
 left: 50%;
 `
-
-
 
 
 
