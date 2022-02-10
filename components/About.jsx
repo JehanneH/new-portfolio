@@ -19,27 +19,27 @@ const AboutLeft = styled.div`
 const AboutRight = styled.div`
   flex: 1;
 `
-
-const LeftCardBg = styled.div`
- position: absolute;
- top: 50px;
- left: 50px;
- width: 22rem;
- height: 28rem;
- background-color: #333;
- border-radius: 30px;
-`
-
 const LeftCard = styled.div`
   width: 60%;
-  height: 75vh;
+  height: 70vh;
   border-radius: 30px;
   position: relative;
+  overflow: hidden;
 `
 
+const LeftCardBg = styled(LeftCard)`
+ position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #333;
+`
+
+
+
 const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 30px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 `;
@@ -52,7 +52,7 @@ const About = () => {
       <AboutLeft>
         <LeftCardBg></LeftCardBg>
         <LeftCard>
-          <StyledImage src="/img/profilepic.jpg" alt="" width={400} height={500} />
+          <StyledImage src="/img/profilepic.jpg" alt="" layout="fill"/>
         </LeftCard>
       </AboutLeft>
 
