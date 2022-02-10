@@ -104,7 +104,7 @@ const Intro = () => {
             <TitleItem>Researcher</TitleItem>
             <TitleItem>Creative</TitleItem>
             <TitleItem>Organized</TitleItem>
-            <TitleItem>Goal Oriented</TitleItem>
+            <TitleItem>Teamwork</TitleItem>
           </TitleWrapper>
         </Title>
       </LeftWrapper>
