@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    img: "/img/placeholder1.jpeg",
+    img: "/img/wineryfullpage.png",
     link: "https://github.com/JehanneH",
   },
   {

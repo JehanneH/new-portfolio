@@ -15,6 +15,8 @@ const PBrowser = styled.div`
   background-color: rgb(243,242,242);
   display: flex;
   align-items: center;
+  position: sticky;
+  z-index: 2;
 `
 
 const PCircle = styled.div`
@@ -24,9 +26,15 @@ const PCircle = styled.div`
   margin: 3px;
   background-color: white;
 `
-const StyledImage = styled(Image)`
-  object-fit: cover;
-`;
+const PImg = styled(Image)`
+
+  
+
+  transition: all 8s ease;
+  &:hover {
+    transform: translateY(-45%)
+  }
+`
 
 const Projects = ({img, link}) => {
   return (
@@ -38,7 +46,7 @@ const Projects = ({img, link}) => {
       </PBrowser>
       <Link href={link}>
         <a target="_blank">
-        <StyledImage src={img} alt="" width={440} height={350} />
+        <PImg src={img} alt="" width="75%" height="100%" layout="responsive" objectFit="contain" />
         </a>
       </Link>
     </PContainer> 

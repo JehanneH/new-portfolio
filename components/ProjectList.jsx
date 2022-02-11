@@ -42,7 +42,6 @@ const ProjectList = () => {
         {products.map((item) => (
           <Projects key={item.id} img={item.img} link={item.link} />
         ))}
-        
       </PLList>
     </PLContainer>
   ) 
