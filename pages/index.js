@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import About from '../components/About'
 import Intro from '../components/Intro'
-import Projects from '../components/Projects'
+import ProjectList from '../components/ProjectList'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       
       <Intro />
       <About />
-      {/* <Projects /> */}
+      <ProjectList />
     </div>
   )
 }
