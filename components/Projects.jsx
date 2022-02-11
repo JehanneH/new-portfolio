@@ -25,10 +25,10 @@ const PCircle = styled.div`
   background-color: white;
 `
 const StyledImage = styled(Image)`
-  /* object-fit: cover; */
+  object-fit: cover;
 `;
 
-const Projects = () => {
+const Projects = ({img, link}) => {
   return (
     <PContainer>
       <PBrowser>
@@ -36,12 +36,12 @@ const Projects = () => {
         <PCircle></PCircle>
         <PCircle></PCircle>
       </PBrowser>
-      <Link href="https://github.com/JehanneH">
+      <Link href={link}>
         <a target="_blank">
-        <StyledImage src="" alt="" width={400} height={400} />
+        <StyledImage src={img} alt="" width={440} height={350} />
         </a>
       </Link>
-    </PContainer>
+    </PContainer> 
   )
 };
 

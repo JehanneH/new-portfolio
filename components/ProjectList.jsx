@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Projects from "./Projects";
+import {products} from "../data"
 
 const PLContainer = styled.div`
   padding: 50px 100px;
@@ -38,12 +39,11 @@ const ProjectList = () => {
         <PLDesc>These are some of my pojects complete during my training at Lighthouse Labs, on my own and in collaboration with others.</PLDesc>
       </PLTexts>
       <PLList>
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
+        {products.map((item) => (
+          <Projects key={item.id} img={item.img} link={item.link} />
+        ))}
+        
+        
       </PLList>
     </PLContainer>
   ) 
