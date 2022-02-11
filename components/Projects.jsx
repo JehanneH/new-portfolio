@@ -8,17 +8,30 @@ const PContainer = styled.div`
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
 `
-const Title = styled.h1`
+const PBrowser = styled.div`
+  height: 20px;
+  background-color: rgb(243,242,242);
+  display: flex;
+  align-items: center;
 `
 
-const ProjectCards = styled.div`
+const PCircle = styled.div`
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;;
+  background-color: white;
 `
 
 
 const Projects = () => {
   return (
     <PContainer>
-      card
+      <PBrowser>
+        <PCircle></PCircle>
+        <PCircle></PCircle>
+        <PCircle></PCircle>
+      </PBrowser>
     </PContainer>
   )
 };
