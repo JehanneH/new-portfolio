@@ -6,13 +6,13 @@ const PContainer = styled.div`
   width: 30%;
   height: 40vh;
   margin: 20px 10px;
-  border: 2px solid rgb(243,242,242);
+  border: 2px solid rgb(232,234,237);
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
 `
 const PBrowser = styled.div`
   height: 20px;
-  background-color: rgb(243,242,242);
+  background-color: rgb(232,234,237);
   display: flex;
   align-items: center;
   position: sticky;
@@ -27,10 +27,8 @@ const PCircle = styled.div`
   background-color: white;
 `
 const PImg = styled(Image)`
-
-  
-
   transition: all 8s ease;
+
   &:hover {
     transform: translateY(-45%)
   }
