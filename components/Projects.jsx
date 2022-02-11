@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 
 const PContainer = styled.div`
@@ -19,10 +21,12 @@ const PCircle = styled.div`
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  margin: 3px;;
+  margin: 3px;
   background-color: white;
 `
-
+const StyledImage = styled(Image)`
+  /* object-fit: cover; */
+`;
 
 const Projects = () => {
   return (
@@ -32,6 +36,11 @@ const Projects = () => {
         <PCircle></PCircle>
         <PCircle></PCircle>
       </PBrowser>
+      <Link href="https://github.com/JehanneH">
+        <a target="_blank">
+        <StyledImage src="" alt="" width={400} height={400} />
+        </a>
+      </Link>
     </PContainer>
   )
 };
