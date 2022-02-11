@@ -35,14 +35,13 @@ const ProjectList = () => {
   return (
     <PLContainer>
       <PLTexts>
-        <PLTitle>Some Projects</PLTitle>
-        <PLDesc>These are some of my pojects complete during my training at Lighthouse Labs, on my own and in collaboration with others.</PLDesc>
+        <PLTitle>Projects</PLTitle>
+        <PLDesc>These are a few of the projects I worked on during my time at Lighthouse Labs, in collaboration with others and on my own.</PLDesc>
       </PLTexts>
       <PLList>
         {products.map((item) => (
           <Projects key={item.id} img={item.img} link={item.link} />
         ))}
-        
         
       </PLList>
     </PLContainer>

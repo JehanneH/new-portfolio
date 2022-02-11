@@ -1,32 +1,32 @@
 export const products = [
   {
     id: 1,
-    img: "/img/wine.png",
+    img: "/img/placeholder1.jpeg",
     link: "https://github.com/JehanneH",
   },
   {
     id: 2,
-    img: "/img/shopify.png",
+    img: "/img/placeholder2.jpeg",
     link: "https://github.com/JehanneH",
   },
   {
     id: 3,
-    img: "/img/wine.png",
+    img: "/img/placeholder1.jpeg",
     link: "https://github.com/JehanneH",
   },
   {
     id: 4,
-    img: "/img/shopify.png",
+    img: "/img/placeholder2.jpeg",
     link: "https://github.com/JehanneH",
   },
   {
     id: 5,
-    img: "/img/wine.png",
+    img: "/img/placeholder1.jpeg",
     link: "https://github.com/JehanneH",
   },
   {
     id: 6,
-    img: "/img/shopify.png",
+    img: "/img/placeholder2.jpeg",
     link: "https://github.com/JehanneH",
   },
 ];
