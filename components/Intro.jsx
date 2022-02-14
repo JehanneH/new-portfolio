@@ -38,6 +38,7 @@ const Greeting = styled.h2`
 `;
 const Name = styled.h1`
   font-size: 60px;
+  font-weight: 300;
 `;
 
 const Title = styled.div`
@@ -72,7 +73,7 @@ const TitleWrapper = styled.div`
 const TitleItem = styled.div`
   height: 50px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 400;
   color: lightblue;
   display: flex;
   align-items: center;

@@ -15,7 +15,7 @@ const PLTexts = styled.div`
 `;
 const PLTitle = styled.h1`
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 400;
 `;
 
 const PLDesc = styled.p`
