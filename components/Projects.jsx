@@ -34,7 +34,7 @@ const PImg = styled(Image)`
   }
 `;
 
-const Projects = ({ img, link }) => {
+const Projects = ({ img, link, desc }) => {
   return (
     <PContainer>
       <PBrowser>

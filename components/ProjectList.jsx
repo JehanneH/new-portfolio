@@ -41,7 +41,7 @@ const ProjectList = () => {
       </PLTexts>
       <PLList>
         {products.map((item) => (
-          <Projects key={item.id} img={item.img} link={item.link} />
+          <Projects key={item.id} img={item.img} link={item.link} desc={item.desc}/>
         ))}
       </PLList>
     </PLContainer>
