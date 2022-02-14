@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     img: "/img/wineryfullpage.png",
-    link: "https://github.com/JehanneH",
+    link: "https://itsmywine.netlify.app/",
   },
   {
     id: 2,

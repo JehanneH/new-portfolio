@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 
 const IntroContainer = styled.div`
   display: flex;
-  height: 100vh;
+  height: 75vh;
 `
 
 const IntroLeft = styled.div`

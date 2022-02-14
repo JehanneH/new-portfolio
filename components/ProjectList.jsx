@@ -36,7 +36,7 @@ const ProjectList = () => {
     <PLContainer>
       <PLTexts>
         <PLTitle>Projects</PLTitle>
-        <PLDesc>These are a few of the projects I worked on during my time at Lighthouse Labs, in collaboration with others and on my own.</PLDesc>
+        <PLDesc>These are a few projects I have worked on on my own and in collaboration with others, as well as during the Lightouse Labs Web Development course</PLDesc>
       </PLTexts>
       <PLList>
         {products.map((item) => (
