@@ -17,6 +17,9 @@ const AboutLeft = styled.div`
 `;
 const AboutRight = styled.div`
   flex: 1;
+  /* background-color: lavender;
+  padding: 1rem 1rem 1rem 3rem;
+  margin: 1rem; */
 `;
 const LeftCard = styled.div`
   width: 45%;
@@ -73,7 +76,6 @@ const SkillsList = styled.li`
 
 
 
-
 const About = () => {
   return (
     <AboutContainer>
@@ -99,13 +101,16 @@ const About = () => {
           <SkillsTitle>My Skills</SkillsTitle>
           <SkillsList>
             <Skills>JavaScript</Skills>
+            <Skills>SQL</Skills>
+            <Skills>JQuery</Skills>
+            <Skills>React</Skills>
+            <Skills>Next.js</Skills>
             <Skills>HTML</Skills>
             <Skills>CSS</Skills>
-            <Skills>Git</Skills>
+            <Skills>SCSS</Skills>
             <Skills>Styled Components</Skills>
-            <Skills>Sass</Skills>
-            <Skills>React</Skills>
-            <Skills>Next</Skills>
+            <Skills>Node</Skills>
+            <Skills>Git</Skills>
           </SkillsList>
         </AboutSkills>
       </AboutRight>
