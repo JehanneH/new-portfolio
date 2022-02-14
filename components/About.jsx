@@ -48,6 +48,31 @@ const AboutDesc = styled.p`
   font-weight: 300;
   margin-right: 40px;
 `;
+const AboutSkills = styled.div`
+  
+`;
+
+const SkillsTitle = styled.h3`
+  font-weight: 500;
+`;
+
+const Skills = styled.ul`
+  padding: 0 4rem 2rem 0;
+  margin: 0;
+  
+`
+
+const SkillsList = styled.li`
+  list-style-type: none;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+`;
+
+
+
 
 const About = () => {
   return (
@@ -70,6 +95,19 @@ const About = () => {
         <br />
         I am currently working on expanding my UX/UI Design skills and in my spare time I like to enjoy the outdoors and nature any way that I can.
         </AboutDesc>
+        <AboutSkills>
+          <SkillsTitle>My Skills</SkillsTitle>
+          <SkillsList>
+            <Skills>JavaScript</Skills>
+            <Skills>HTML</Skills>
+            <Skills>CSS</Skills>
+            <Skills>Git</Skills>
+            <Skills>Styled Components</Skills>
+            <Skills>Sass</Skills>
+            <Skills>React</Skills>
+            <Skills>Next</Skills>
+          </SkillsList>
+        </AboutSkills>
       </AboutRight>
     </AboutContainer>
   );
