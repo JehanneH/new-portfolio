@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Circle from "./Circle";
 import styled, { keyframes } from "styled-components";
+import { BiDownArrow } from "react-icons/bi";
 
 const IntroContainer = styled.div`
   display: flex;
   height: 75vh;
-`
+`;
 
 const IntroLeft = styled.div`
   flex: 1;
@@ -13,14 +14,14 @@ const IntroLeft = styled.div`
   align-items: center;
   justify-content: center;
   margin-left: 5rem;
-`
+`;
 const IntroRight = styled.div`
- flex: 1;
- display: flex;
- align-items: center;
- justify-content: center;
- margin-right: 5rem;
-`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+`;
 const LeftWrapper = styled.div`
   padding: 20px;
   margin-left: 3rem;
@@ -30,19 +31,19 @@ const LeftWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`
+`;
 const Greeting = styled.h2`
- font-size: 30px;
- font-weight: 300;
-`
+  font-size: 30px;
+  font-weight: 300;
+`;
 const Name = styled.h1`
- font-size: 60px;
-`
+  font-size: 60px;
+`;
 
 const Title = styled.div`
   height: 50px;
   overflow: hidden;
-`
+`;
 
 const scrollAnimation = keyframes`
   25% {
@@ -57,7 +58,7 @@ const scrollAnimation = keyframes`
   100% {
     transform: translateY(-200px);
   }
-`
+`;
 
 const TitleWrapper = styled.div`
   height: 100%;
@@ -66,7 +67,7 @@ const TitleWrapper = styled.div`
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-`
+`;
 
 const TitleItem = styled.div`
   height: 50px;
@@ -75,47 +76,46 @@ const TitleItem = styled.div`
   color: lightblue;
   display: flex;
   align-items: center;
-`
+`;
 
 const StyledImage = styled(Image)`
   object-fit: cover;
 `;
 
 const Scroll = styled.div`
-width: 30px;
-height: 30px;
-position: absolute;
-bottom: 20px;
-left: 50%;
-`
-
-
-
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+`;
 
 const Intro = () => {
-  return <IntroContainer>
-    <IntroLeft>
-      <LeftWrapper>
-        <Greeting>Hello, my name is</Greeting>
-        <Name>Jehanne Hodge</Name>
-        <Title>
-          <TitleWrapper>
-            <TitleItem>Web Developer</TitleItem>
-            <TitleItem>Researcher</TitleItem>
-            <TitleItem>Creative</TitleItem>
-            <TitleItem>Organized</TitleItem>
-            <TitleItem>Teamwork</TitleItem>
-          </TitleWrapper>
-        </Title>
-      </LeftWrapper>
-      <Scroll>V</Scroll>
-    </IntroLeft>
-    <IntroRight>
-      <StyledImage src="/img/intro-img.png" alt="" width={400} height={400} />
-    </IntroRight>
-
-      
-  </IntroContainer>;
+  return (
+    <IntroContainer>
+      <IntroLeft>
+        <LeftWrapper>
+          <Greeting>Hello, my name is</Greeting>
+          <Name>Jehanne Hodge</Name>
+          <Title>
+            <TitleWrapper>
+              <TitleItem>Web Developer</TitleItem>
+              <TitleItem>Researcher</TitleItem>
+              <TitleItem>Creative</TitleItem>
+              <TitleItem>Organized</TitleItem>
+              <TitleItem>Teamwork</TitleItem>
+            </TitleWrapper>
+          </Title>
+        </LeftWrapper>
+        <Scroll>
+          <BiDownArrow />
+        </Scroll>
+      </IntroLeft>
+      <IntroRight>
+        <StyledImage src="/img/intro-img.png" alt="" width={400} height={400} />
+      </IntroRight>
+    </IntroContainer>
+  );
 };
 
 export default Intro;
