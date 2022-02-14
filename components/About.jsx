@@ -31,7 +31,7 @@ const AboutLeft = styled.div`
 const AboutRight = styled.div`
   flex: 1.2;
   background-color: lavender;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 5px 0px 2px 30px;
   margin-right: 1.5rem;
 `;
@@ -45,9 +45,9 @@ const LeftCard = styled.div`
 
 const LeftCardBg = styled(LeftCard)`
   position: absolute;
-  top: 165px;
-  left: 140px;
-  background-color: #b3e6cb;
+  top: 170px;
+  left: 145px;
+  background-color: #b1e6cad3;
 `;
 
 const AboutImg = styled(Image)`
