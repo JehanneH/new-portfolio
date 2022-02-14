@@ -21,7 +21,7 @@ const AboutContainer = styled.div`
 `;
 
 const AboutLeft = styled.div`
-  flex: 1;
+  flex: 0.9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,10 +29,11 @@ const AboutLeft = styled.div`
   height: 100%;
 `;
 const AboutRight = styled.div`
-  flex: 1;
-  /* background-color: lavender;
-  padding: 1rem 1rem 1rem 3rem;
-  margin: 1rem; */
+  flex: 1.2;
+  background-color: lavender;
+  border-radius: 10px;
+  padding: 5px 0px 2px 30px;
+  margin-right: 1.5rem;
 `;
 const LeftCard = styled.div`
   width: 45%;
@@ -44,9 +45,9 @@ const LeftCard = styled.div`
 
 const LeftCardBg = styled(LeftCard)`
   position: absolute;
-  top: 150px;
-  left: 160px;
-  background-color: #333;
+  top: 165px;
+  left: 140px;
+  background-color: #b3e6cb;
 `;
 
 const AboutImg = styled(Image)`
@@ -58,7 +59,7 @@ const AboutTitle = styled.h1`
   font-weight: 400;
 `;
 const AboutSub = styled.p`
-  margin: 20px 0px;
+  margin: 20px 3px;
 `;
 const AboutDesc = styled.p`
   font-weight: 300;
