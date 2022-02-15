@@ -30,7 +30,6 @@ const CInfoItem = styled.div`
   display: flex;
   align-items: center;
   margin: 50px 0px;
-
 `;
 
 const CRight = styled.div`
@@ -49,18 +48,42 @@ const LocationIcon = styled(MdLocationOn)`
 
 const RDesc = styled.p`
   font-weight: 300;
-`
+`;
 
 const Form = styled.form`
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
-`
+`;
 
 const Input = styled.input`
-  
-`
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  font-family: 'Roboto Mono', monospace;
+`;
 const TextArea = styled.textarea`
-  
-`
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-radius: 10px;
+`;
+const Button = styled.button`
+  border: none;
+  padding: 10px;
+  background-color: #b1e6cad3;
+  width: 100px;
+  font-weight: 500;
+  font-family: 'Roboto Mono', monospace;
+  color: #044404;
+`;
 
 const Contact = () => {
   return (
@@ -81,14 +104,14 @@ const Contact = () => {
           </CInfo>
         </CLeft>
         <CRight>
-          <RDesc>
-            Get in touch if you are interested in working with me
-          </RDesc>
+          <RDesc>Get in touch if you are interested in working with me</RDesc>
           <Form>
-            <Input type='text' placeholder="Name" name="user_name"></Input>
-            <Input type='text' placeholder="Subject" name="user_subject"></Input>
-            <Input type='text' placeholder="Email" name="user_email"></Input>
-            <TextArea></TextArea>
+            <Input type="text" placeholder="Name" name="user_name"></Input>
+            <Input type="text" placeholder="Subject" name="user_subject"
+            ></Input>
+            <Input type="text" placeholder="Email" name="user_email"></Input>
+            <TextArea rows="5" placeholder="Message" name="message"></TextArea>
+            <Button>Submit</Button>
           </Form>
         </CRight>
       </CWrapper>
