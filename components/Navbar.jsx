@@ -36,10 +36,10 @@ const Navbar = () => {
           <Link href="/about">About</Link>
         </ListItem>
         <ListItem>
-          <Link href="/skills">Skills</Link>
+          <Link href="/projects">Projects</Link>
         </ListItem>
         <ListItem>
-          <Link href="/projects">Projects</Link>
+          <Link href="/projects">Contact</Link>
         </ListItem>
       </List>
     </Container>
