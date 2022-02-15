@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { MdLocationOn, MdAlternateEmail } from "react-icons/md";
+import { useRef } from "react";
 
 const ContactContainer = styled.div`
   height: 100vh;
   position: relative;
 `;
 const CBackground = styled.div`
-  width: 20px;
+  width: 25px;
   height: 100%;
   background-color: lavender;
   position: absolute;
@@ -34,6 +35,7 @@ const CInfoItem = styled.div`
 
 const CRight = styled.div`
   flex: 1;
+  margin-top:  3rem;
 `;
 const EmailIcon = styled(MdAlternateEmail)`
   width: 30px;
@@ -48,6 +50,7 @@ const LocationIcon = styled(MdLocationOn)`
 
 const RDesc = styled.p`
   font-weight: 300;
+  font-size: 20px;
 `;
 
 const Form = styled.form`
@@ -83,9 +86,14 @@ const Button = styled.button`
   font-weight: 500;
   font-family: 'Roboto Mono', monospace;
   color: #044404;
+  cursor: pointer;
 `;
 
 const Contact = () => {
+  const formRef = useRef()
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
   return (
     <ContactContainer>
       <CBackground></CBackground>
@@ -104,8 +112,8 @@ const Contact = () => {
           </CInfo>
         </CLeft>
         <CRight>
-          <RDesc>Get in touch if you are interested in working with me</RDesc>
-          <Form>
+          <RDesc>Send me a message if you're interested in working with me:</RDesc>
+          <Form ref={formRef} onSubmit={handleSubmit}>
             <Input type="text" placeholder="Name" name="user_name"></Input>
             <Input type="text" placeholder="Subject" name="user_subject"
             ></Input>
