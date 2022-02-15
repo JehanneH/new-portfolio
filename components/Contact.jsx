@@ -68,15 +68,19 @@ const Input = styled.input`
   border-bottom: 1px solid black;
   margin: 10px 0px;
   font-size: 14px;
-  padding-left: 10px;
+  padding-left: 12px;
   font-family: 'Roboto Mono', monospace;
+  outline: none;
 `;
 const TextArea = styled.textarea`
-  width: 100%;
+  width: 90%;
+  height: 20rem;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+  outline: none;
+  padding: 12px;
 `;
 const Button = styled.button`
   border: none;
@@ -118,7 +122,7 @@ const Contact = () => {
             <Input type="text" placeholder="Subject" name="user_subject"
             ></Input>
             <Input type="text" placeholder="Email" name="user_email"></Input>
-            <TextArea rows="5" placeholder="Message" name="message"></TextArea>
+            <TextArea placeholder="Message..." name="message"></TextArea>
             <Button>Submit</Button>
           </Form>
         </CRight>
