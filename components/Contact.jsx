@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MdLocationOn, MdAlternateEmail } from "react-icons/md";
 import { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const ContactContainer = styled.div`
   height: 100vh;
@@ -97,7 +98,15 @@ const Contact = () => {
   const formRef = useRef()
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    emailjs.sendForm('service_a1nxlqg', 'template_cgq1p9i', formRef.current, 'user_8mjtBsQx2wqxSVs0uxj5u')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   }
+
   return (
     <ContactContainer>
       <CBackground></CBackground>

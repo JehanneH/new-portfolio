@@ -141,15 +141,13 @@ const About = () => {
           and Gender Studies
         </AboutSub>
         <AboutDesc>
-          With excellent attention to detail, I enjoy the challenge of learning
+          I enjoy the challenge of learning
           new languages and frameworks. My diverse background has taught me to
           be flexible and adaptable to new situations. As a Master's student I
           furthered my independent working skills and initiative, in addition to
           becoming a dedicated researcher. All these qualities contribute to my
           journey as a lifelong learner.
-          <br />I am currently working on expanding my UX/UI Design skills and
-          in my spare time I like to enjoy the outdoors and nature any way that
-          I can.
+          <br />I am currently interested in frontend and UI/UX deisgn. In my spare time I like to enjoy the outdoors and nature any way that I can.
         </AboutDesc>
         <AboutSkills>
           <SkillsTitle>My Skills</SkillsTitle>
