@@ -11,7 +11,7 @@ const ContactContainer = styled.div`
 const CBackground = styled.div`
   width: 25px;
   height: 100%;
-  background-color: lavender;
+  background-color: #b1e6cad3;
   position: absolute;
 `;
 const CWrapper = styled.div`
