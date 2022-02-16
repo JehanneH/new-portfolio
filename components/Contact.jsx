@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MdLocationOn, MdAlternateEmail } from "react-icons/md";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
 const ContactContainer = styled.div`
@@ -94,14 +94,23 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const DoneMessage = styled.div`
+  padding-top: 1rem;
+  font-size: 14px;
+`
+
 const Contact = () => {
   const formRef = useRef()
-  const handleSubmit = (e) => {
+  const [done, setDone] = useState(true)
+
+  
+  const handleSubmit = (e,onSubmitProps) => {
     e.preventDefault()
 
     emailjs.sendForm('service_a1nxlqg', 'template_cgq1p9i', formRef.current, 'user_8mjtBsQx2wqxSVs0uxj5u')
       .then((result) => {
           console.log(result.text);
+          setDone(true)
       }, (error) => {
           console.log(error.text);
       });
@@ -133,6 +142,8 @@ const Contact = () => {
             <Input type="text" placeholder="Email" name="user_email"></Input>
             <TextArea placeholder="Message..." name="message"></TextArea>
             <Button>Submit</Button>
+            <DoneMessage> {done && "Thank You! Your message has been sent :)"}</DoneMessage>
+           
           </Form>
         </CRight>
       </CWrapper>
