@@ -1,9 +1,11 @@
 import Link from "next/link";
 import styled from "styled-components";
+import { useContext } from 'react'
+import { ThemeContext } from '../context'
 
 const Container = styled.div`
   height: 15vh;
-  background: transparent;
+  background-color: white;
   color: black;
   display: flex;
   align-items: center;
@@ -26,19 +28,21 @@ const ListItem = styled.li`
 `;
 
 const Navbar = () => {
+  const theme = useContext(ThemeContext)
+  const darkMode =theme.state.darkMode
   return (
-    <Container>
+    <Container style={{backgroundColor: darkMode ? "#222" : "white", color: darkMode && "white" }}>
       <Title>
         <Link href="/">JH</Link>
       </Title>
       <List>
-        <ListItem>
+        <ListItem style={{color: darkMode && "white"}}>
           <Link href="/about">About</Link>
         </ListItem>
-        <ListItem>
+        <ListItem style={{color: darkMode && "white"}}>
           <Link href="/projects">Projects</Link>
         </ListItem>
-        <ListItem>
+        <ListItem style={{color: darkMode && "white"}}>
           <Link href="/projects">Contact</Link>
         </ListItem>
       </List>
