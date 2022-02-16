@@ -101,7 +101,7 @@ const DoneMessage = styled.div`
 
 const Contact = () => {
   const formRef = useRef()
-  const [done, setDone] = useState(true)
+  const [done, setDone] = useState(false)
 
   
   const handleSubmit = (e,onSubmitProps) => {
