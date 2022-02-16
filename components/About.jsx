@@ -86,10 +86,10 @@ const SkillsList = styled.li`
 `;
 
 const JS = styled(SiJavascript)`
-  color: #F0DB4F;
+  color: #f0db4f;
 `;
 const HTML = styled(SiHtml5)`
-  color: #F16529;
+  color: #f16529;
 `;
 const CSS = styled(SiCss3)`
   color: #264de4;
@@ -108,7 +108,7 @@ const JQuery = styled(SiJquery)`
   color: #0769ad;
 `;
 const React = styled(SiReact)`
-  color: #61DBFB;
+  color: #61dbfb;
 `;
 const Next = styled(SiNextdotjs)`
   color: #121212;
@@ -117,7 +117,7 @@ const Node = styled(SiNodedotjs)`
   color: #3c873a;
 `;
 const Git = styled(SiGit)`
-  color: #F1502F;
+  color: #f1502f;
 `;
 
 const About = () => {
@@ -141,13 +141,13 @@ const About = () => {
           and Gender Studies
         </AboutSub>
         <AboutDesc>
-          I enjoy the challenge of learning
-          new languages and frameworks. My diverse background has taught me to
-          be flexible and adaptable to new situations. As a Master's student I
-          furthered my independent working skills and initiative, in addition to
-          becoming a dedicated researcher. All these qualities contribute to my
-          journey as a lifelong learner.
-          <br />I am currently interested in frontend and UI/UX deisgn. In my spare time I like to enjoy the outdoors and nature any way that I can.
+          I enjoy the challenge of learning new languages and frameworks. My
+          diverse background has taught me to be flexible and adaptable to new
+          situations. As a Master's student I furthered my independent working
+          skills and initiative, in addition to becoming a dedicated researcher.
+          All these qualities contribute to my journey as a lifelong learner.
+          <br />I am currently interested in frontend and UI/UX deisgn. In my
+          spare time I like to enjoy the outdoors and nature any way that I can.
         </AboutDesc>
         <AboutSkills>
           <SkillsTitle>My Skills</SkillsTitle>

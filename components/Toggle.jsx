@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { BsSun, BsMoon} from 'react-icons/bs'
+import { BsSun, BsMoon } from "react-icons/bs";
 
 const ToggleContainer = styled.div`
   width: 50px;
   height: 25px;
   border-radius: 20px;
-  border: 1px solid grey; 
+  border: 1px solid grey;
   background-color: white;
   position: fixed;
   top: 15px;
@@ -14,16 +14,16 @@ const ToggleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-`
+`;
 
 const Sun = styled(BsSun)`
   width: 15px;
   height: 15px;
-`
+`;
 const Moon = styled(BsMoon)`
   width: 14px;
   height: 14px;
-`
+`;
 
 const ToggleButton = styled.div`
   width: 25px;
@@ -32,9 +32,7 @@ const ToggleButton = styled.div`
   background-color: grey;
   position: absolute;
   cursor: pointer;
-  right:0
-
-`
+`;
 
 const Toggle = () => {
   return (
@@ -43,8 +41,7 @@ const Toggle = () => {
       <Moon />
       <ToggleButton></ToggleButton>
     </ToggleContainer>
+  );
+};
 
-  )
-}
-
-export default Toggle
+export default Toggle;

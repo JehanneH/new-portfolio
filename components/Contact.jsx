@@ -36,7 +36,7 @@ const CInfoItem = styled.div`
 
 const CRight = styled.div`
   flex: 1;
-  margin-top:  3rem;
+  margin-top: 3rem;
 `;
 const EmailIcon = styled(MdAlternateEmail)`
   width: 30px;
@@ -59,7 +59,6 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 `;
 
 const Input = styled.input`
@@ -70,7 +69,7 @@ const Input = styled.input`
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 12px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   outline: none;
 `;
 const TextArea = styled.textarea`
@@ -89,7 +88,7 @@ const Button = styled.button`
   background-color: #b1e6cad3;
   width: 100px;
   font-weight: 500;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   color: #044404;
   cursor: pointer;
 `;
@@ -97,24 +96,32 @@ const Button = styled.button`
 const DoneMessage = styled.div`
   padding-top: 1rem;
   font-size: 14px;
-`
+`;
 
 const Contact = () => {
-  const formRef = useRef()
-  const [done, setDone] = useState(false)
+  const formRef = useRef();
+  const [done, setDone] = useState(false);
 
-  
-  const handleSubmit = (e,onSubmitProps) => {
-    e.preventDefault()
+  const handleSubmit = (e, onSubmitProps) => {
+    e.preventDefault();
 
-    emailjs.sendForm('service_a1nxlqg', 'template_cgq1p9i', formRef.current, 'user_8mjtBsQx2wqxSVs0uxj5u')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_a1nxlqg",
+        "template_cgq1p9i",
+        formRef.current,
+        "user_8mjtBsQx2wqxSVs0uxj5u"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-          setDone(true)
-      }, (error) => {
+          setDone(true);
+        },
+        (error) => {
           console.log(error.text);
-      });
-  }
+        }
+      );
+  };
 
   return (
     <ContactContainer>
@@ -134,16 +141,23 @@ const Contact = () => {
           </CInfo>
         </CLeft>
         <CRight>
-          <RDesc>Send me a message if you're interested in working with me:</RDesc>
+          <RDesc>
+            Send me a message if you're interested in working with me:
+          </RDesc>
           <Form ref={formRef} onSubmit={handleSubmit}>
             <Input type="text" placeholder="Name" name="user_name"></Input>
-            <Input type="text" placeholder="Subject" name="user_subject"
+            <Input
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
             ></Input>
             <Input type="text" placeholder="Email" name="user_email"></Input>
             <TextArea placeholder="Message..." name="message"></TextArea>
             <Button>Submit</Button>
-            <DoneMessage> {done && "Thank You! Your message has been sent :)"}</DoneMessage>
-           
+            <DoneMessage>
+              {" "}
+              {done && "Thank You! Your message has been sent :)"}
+            </DoneMessage>
           </Form>
         </CRight>
       </CWrapper>
