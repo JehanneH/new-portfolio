@@ -12,6 +12,9 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 0 150px;
   font-size: 18px;
+  ${({ darkMode }) => darkMode && `
+    background: blue;
+  `}
 `;
 
 const Title = styled.div`

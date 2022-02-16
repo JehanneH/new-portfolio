@@ -13,6 +13,8 @@ import {
   SiNodedotjs,
   SiGit,
 } from "react-icons/si";
+import { useContext } from "react";
+import { ThemeContext } from "../context";
 
 const AboutContainer = styled.div`
   height: 100vh;
@@ -121,6 +123,8 @@ const Git = styled(SiGit)`
 `;
 
 const About = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <AboutContainer>
       <AboutLeft>
@@ -134,7 +138,7 @@ const About = () => {
           />
         </LeftCard>
       </AboutLeft>
-      <AboutRight>
+      <AboutRight style={{ backgroundColor: darkMode && "#a78ac2" }}>
         <AboutTitle>About Me</AboutTitle>
         <AboutSub>
           I am a Full-Stack Web Developer with a Master's degree in Sociology

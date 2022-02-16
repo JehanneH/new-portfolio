@@ -102,8 +102,8 @@ const DoneMessage = styled.div`
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
-  const theme = useContext(ThemeContext)
-  const darkMode =theme.state.darkMode
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const handleSubmit = (e, onSubmitProps) => {
     e.preventDefault();
@@ -148,14 +148,29 @@ const Contact = () => {
             Send me a message if you're interested in working with me:
           </RDesc>
           <Form ref={formRef} onSubmit={handleSubmit}>
-            <Input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Name" name="user_name"></Input>
             <Input
-              style={{backgroundColor: darkMode && "#333"}}type="text"
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Name"
+              name="user_name"
+            ></Input>
+            <Input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
               placeholder="Subject"
               name="user_subject"
             ></Input>
-            <Input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Email" name="user_email"></Input>
-            <TextArea style={{backgroundColor: darkMode && "#333"}} placeholder="Message..." name="message"></TextArea>
+            <Input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            ></Input>
+            <TextArea
+              style={{ backgroundColor: darkMode && "#333" }}
+              placeholder="Message..."
+              name="message"
+            ></TextArea>
             <Button>Submit</Button>
             <DoneMessage>
               {" "}
