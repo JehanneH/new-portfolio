@@ -29,6 +29,7 @@ const PCircle = styled.div`
 const PImg = styled(Image)`
   transition: all 8s ease;
 
+
   &:hover {
     transform: translateY(-45%);
   }
@@ -47,8 +48,8 @@ const Projects = ({ img, link, desc }) => {
           <PImg
             src={img}
             alt=""
-            width="75%"
-            height="100%"
+            width="68%"
+            height="89%"
             layout="responsive"
             objectFit="contain"
           />
