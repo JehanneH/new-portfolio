@@ -26,7 +26,7 @@ const Sun = styled(BsSun)`
 const Moon = styled(BsMoon)`
   width: 14px;
   height: 14px;
-  color: #ffd000;
+  color: #ffbb00;
 `;
 
 const ToggleButton = styled.div`

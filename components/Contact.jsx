@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { MdLocationOn, MdAlternateEmail } from "react-icons/md";
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import { ThemeContext } from "../context";
 
 const ContactContainer = styled.div`
   height: 100vh;
@@ -101,6 +102,8 @@ const DoneMessage = styled.div`
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
+  const theme = useContext(ThemeContext)
+  const darkMode =theme.state.darkMode
 
   const handleSubmit = (e, onSubmitProps) => {
     e.preventDefault();
@@ -145,14 +148,14 @@ const Contact = () => {
             Send me a message if you're interested in working with me:
           </RDesc>
           <Form ref={formRef} onSubmit={handleSubmit}>
-            <Input type="text" placeholder="Name" name="user_name"></Input>
+            <Input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Name" name="user_name"></Input>
             <Input
-              type="text"
+              style={{backgroundColor: darkMode && "#333"}}type="text"
               placeholder="Subject"
               name="user_subject"
             ></Input>
-            <Input type="text" placeholder="Email" name="user_email"></Input>
-            <TextArea placeholder="Message..." name="message"></TextArea>
+            <Input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Email" name="user_email"></Input>
+            <TextArea style={{backgroundColor: darkMode && "#333"}} placeholder="Message..." name="message"></TextArea>
             <Button>Submit</Button>
             <DoneMessage>
               {" "}
