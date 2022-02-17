@@ -34,7 +34,6 @@ const AboutLeft = styled.div`
 const AboutRight = styled.div`
   flex: 1;
   background-color: lavender;
-  /* border-radius: 10px; */
   padding: 5px 18px 2px 35px;
   margin-right: 1.5rem;
 `;

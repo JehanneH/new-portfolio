@@ -33,11 +33,8 @@ const IntroRight = styled.div`
   margin-right: 5rem;
 `;
 const LeftWrapper = styled.div`
-  padding: 20px;
   margin-left: 3rem;
   height: 65%;
-  /* border: solid 1px black;
-  border-radius: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,17 +42,25 @@ const LeftWrapper = styled.div`
 const Greeting = styled.h2`
   font-size: 25px;
   font-weight: 300;
+  margin-bottom: 0px;
 `;
 const Name = styled.h1`
   font-size: 50px;
   font-weight: 300;
+  margin: 20px 15px;
+  
 `;
-const TitleIntro=styled.p``
+const TitleIntro=styled.p`
+  margin: 2px 0px 10px 35px;
+  font-size: 17px;
+`
 
 const Title = styled.div`
   height: 40px;
   padding-left: 10px;
   overflow: hidden;
+  margin: 2px 40px;
+  
 `;
 
 const scrollAnimation = keyframes`
@@ -86,7 +91,7 @@ const TitleItem = styled.div`
   height: 50px;
   font-size: 30px;
   font-weight: 400;
-  color: #69a285;
+  color: #60987b;
   display: flex;
   align-items: center;
 `;
