@@ -9,7 +9,7 @@ const ContactContainer = styled.div`
   position: relative;
 `;
 const CBackground = styled.div`
-  width: 25px;
+  width: 35px;
   height: 100%;
   background-color: #b1e6cad3;
   position: absolute;
@@ -21,6 +21,7 @@ const CWrapper = styled.div`
 
 const CLeft = styled.div`
   flex: 1;
+  padding-left: 50px;
 `;
 
 const CTitle = styled.h1`
