@@ -25,8 +25,8 @@ export const products = [
   },
   {
     id: 5,
-    img: "/img/placeholder1.jpeg",
-    link: "https://github.com/JehanneH",
+    img: "/img/scheduler.png",
+    link: "https://github.com/JehanneH/scheduler",
     desc: ""
   },
   {

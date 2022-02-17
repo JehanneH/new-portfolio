@@ -7,7 +7,7 @@ const ToggleContainer = styled.div`
   width: 50px;
   height: 25px;
   border-radius: 20px;
-  border: 1px solid grey;
+  border: 1px solid #bdbbbb;
   background-color: white;
   position: fixed;
   top: 15px;
@@ -21,19 +21,19 @@ const ToggleContainer = styled.div`
 const Sun = styled(BsSun)`
   width: 15px;
   height: 15px;
-  color: #ffd000;
+  color: #ff9900;
 `;
 const Moon = styled(BsMoon)`
   width: 14px;
   height: 14px;
-  color: #ffbb00;
+  color: #ff9900;
 `;
 
 const ToggleButton = styled.div`
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: grey;
+  background-color: #bdbbbb;
   position: absolute;
   cursor: pointer;
 `;
