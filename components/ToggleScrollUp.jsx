@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { TiArrowUpOutline } from "react-icons/ti";
+import {animateScroll as scroll} from 'react-scroll'
 
 const ToggleContainer = styled.div`
   width: 50px;
@@ -15,10 +16,15 @@ const UpArrow = styled(TiArrowUpOutline)`
   height: 25px;
 `;
 
+
 const ToggleScrollUp = () => {
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
   return (
     <ToggleContainer>
-      <UpArrow />
+      <UpArrow onClick={toggleHome}/>
     </ToggleContainer>
   );
 };

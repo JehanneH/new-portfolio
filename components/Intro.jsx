@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Circle from "./Circle";
 import styled, { keyframes } from "styled-components";
-import { BiDownArrow } from "react-icons/bi";
+import { TiArrowDownOutline } from "react-icons/ti";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
 
@@ -13,12 +12,16 @@ const IntroContainer = styled.div`
 `;
 
 const Container = styled.div`
-display: flex;
-height: 70vh;
-width: 85%;
-background: rgb(177,230,202);
-background: radial-gradient(circle, rgba(177,230,202,1) 0%, rgba(230,230,250,1) 100%);
-`
+  display: flex;
+  height: 70vh;
+  width: 85%;
+  background: rgb(177, 230, 202);
+  background: radial-gradient(
+    circle,
+    rgba(177, 230, 202, 1) 0%,
+    rgba(230, 230, 250, 1) 100%
+  );
+`;
 
 const IntroLeft = styled.div`
   flex: 1;
@@ -50,19 +53,17 @@ const Name = styled.h1`
   font-size: 50px;
   font-weight: 300;
   margin: 20px 15px;
-  
 `;
-const TitleIntro=styled.p`
+const TitleIntro = styled.p`
   margin: 2px 0px 10px 35px;
   font-size: 17px;
-`
+`;
 
 const Title = styled.div`
   height: 40px;
   padding-left: 10px;
   overflow: hidden;
   margin: 2px 40px;
-  
 `;
 
 const scrollAnimation = keyframes`
@@ -112,34 +113,61 @@ const Scroll = styled.div`
   cursor: pointer;
 `;
 
+const DownArrow = styled(TiArrowDownOutline)`
+  width: 25px;
+  height: 25px;
+`;
+
 const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
     <IntroContainer>
-      <Container style={{background: darkMode && "radial-gradient(circle, #618572 0%, #513e63)100%"}}>
-      <IntroLeft>
-        <LeftWrapper>
-          <Greeting>Hello, my name is</Greeting>
-          <Name>Jehanne Hodge</Name>
-          <TitleIntro>and I am...</TitleIntro>
-          <Title>
-            <TitleWrapper>
-              <TitleItem style={{ color: darkMode && "#b1e6ca" }}> a Web Developer</TitleItem>
-              <TitleItem style={{ color: darkMode && "#b1e6ca" }}> a Researcher</TitleItem>
-              <TitleItem style={{ color: darkMode && "#b1e6ca" }}>Creative</TitleItem>
-              <TitleItem style={{ color: darkMode && "#b1e6ca" }}>Organized</TitleItem>
-              <TitleItem style={{ color: darkMode && "#b1e6ca" }}>Hard Working</TitleItem>
-            </TitleWrapper>
-          </Title>
-        </LeftWrapper>
-        <Scroll>
-          <BiDownArrow />
-        </Scroll>
-      </IntroLeft>
-      <IntroRight>
-        <StyledImage src="/img/intro-img.svg" alt="" width={600} height={400} />
-      </IntroRight>
+      <Container
+        style={{
+          background:
+            darkMode && "radial-gradient(circle, #618572 0%, #513e63)100%",
+        }}
+      >
+        <IntroLeft>
+          <LeftWrapper>
+            <Greeting>Hello, my name is</Greeting>
+            <Name>Jehanne Hodge</Name>
+            <TitleIntro>and I am...</TitleIntro>
+            <Title>
+              <TitleWrapper>
+                <TitleItem style={{ color: darkMode && "#b1e6ca" }}>
+                  {" "}
+                  a Web Developer
+                </TitleItem>
+                <TitleItem style={{ color: darkMode && "#b1e6ca" }}>
+                  {" "}
+                  a Researcher
+                </TitleItem>
+                <TitleItem style={{ color: darkMode && "#b1e6ca" }}>
+                  Creative
+                </TitleItem>
+                <TitleItem style={{ color: darkMode && "#b1e6ca" }}>
+                  Organized
+                </TitleItem>
+                <TitleItem style={{ color: darkMode && "#b1e6ca" }}>
+                  Hard Working
+                </TitleItem>
+              </TitleWrapper>
+            </Title>
+          </LeftWrapper>
+          <Scroll>
+            <DownArrow />
+          </Scroll>
+        </IntroLeft>
+        <IntroRight>
+          <StyledImage
+            src="/img/intro-img.svg"
+            alt=""
+            width={600}
+            height={400}
+          />
+        </IntroRight>
       </Container>
     </IntroContainer>
   );

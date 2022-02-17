@@ -42,13 +42,16 @@ const ToggleDarkMode = () => {
   const theme = useContext(ThemeContext);
 
   const handleClick = () => {
-    theme.dispatch({type:"TOGGLE"})
-  }
+    theme.dispatch({ type: "TOGGLE" });
+  };
   return (
     <ToggleContainer>
       <Sun />
       <Moon />
-      <ToggleButton onClick={handleClick} style={{left: theme.state.darkMode ? 0 : 25}}></ToggleButton>
+      <ToggleButton
+        onClick={handleClick}
+        style={{ left: theme.state.darkMode ? 0 : 25 }}
+      ></ToggleButton>
     </ToggleContainer>
   );
 };

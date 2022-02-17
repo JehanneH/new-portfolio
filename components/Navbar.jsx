@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { useContext } from 'react'
-import { ThemeContext } from '../context'
+import { useContext } from "react";
+import { ThemeContext } from "../context";
 
 const Container = styled.div`
   height: 15vh;
@@ -12,7 +12,9 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 0 150px;
   font-size: 18px;
-  ${({ darkMode }) => darkMode && `
+  ${({ darkMode }) =>
+    darkMode &&
+    `
     background: blue;
   `}
 `;
@@ -31,24 +33,26 @@ const ListItem = styled.li`
 `;
 
 const Navbar = () => {
-  const theme = useContext(ThemeContext)
-  const darkMode =theme.state.darkMode
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <Container style={{backgroundColor: darkMode ? "#222" : "white", color: darkMode && "white" }}>
+    <Container
+      style={{
+        backgroundColor: darkMode ? "#222" : "white",
+        color: darkMode && "white",
+      }}
+    >
       <Title>
         <Link href="/">JH</Link>
       </Title>
       <List>
-        <ListItem style={{color: darkMode && "white"}}>
-          <Link href="/about"
-      
-          
-          >About</Link>
+        <ListItem style={{ color: darkMode && "white" }}>
+          <Link href="/about">About</Link>
         </ListItem>
-        <ListItem style={{color: darkMode && "white"}}>
+        <ListItem style={{ color: darkMode && "white" }}>
           <Link href="/projects">Projects</Link>
         </ListItem>
-        <ListItem style={{color: darkMode && "white"}}>
+        <ListItem style={{ color: darkMode && "white" }}>
           <Link href="/projects">Contact</Link>
         </ListItem>
       </List>
