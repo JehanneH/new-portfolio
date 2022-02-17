@@ -18,12 +18,13 @@ import { ThemeContext } from "../context";
 
 const AboutContainer = styled.div`
   height: 100vh;
+  width: 95%;
   display: flex;
   align-items: center;
 `;
 
 const AboutLeft = styled.div`
-  flex: 0.9;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,10 +32,10 @@ const AboutLeft = styled.div`
   height: 100%;
 `;
 const AboutRight = styled.div`
-  flex: 1.2;
+  flex: 1;
   background-color: lavender;
   /* border-radius: 10px; */
-  padding: 5px 0px 2px 30px;
+  padding: 5px 18px 2px 35px;
   margin-right: 1.5rem;
 `;
 const LeftCard = styled.div`
@@ -47,8 +48,8 @@ const LeftCard = styled.div`
 
 const LeftCardBg = styled(LeftCard)`
   position: absolute;
-  top: 170px;
-  left: 145px;
+  top: 160px;
+  left: 150px;
   background-color: #b1e6ca;
 `;
 
