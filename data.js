@@ -9,30 +9,30 @@ export const products = [
     id: 2,
     img: "/img/placeholder2.jpeg",
     link: "https://github.com/JehanneH",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: ""
   },
   {
     id: 3,
-    img: "/img/placeholder1.jpeg",
-    link: "https://github.com/JehanneH",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    img: "/img/tweeter.png",
+    link: "https://github.com/JehanneH/tweeter",
+    desc: ""
   },
   {
     id: 4,
-    img: "/img/placeholder2.jpeg",
-    link: "https://github.com/JehanneH",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    img: "/img/shoppies.png",
+    link: "https://sad-pike-030d48.netlify.app/",
+    desc: ""
   },
   {
     id: 5,
     img: "/img/placeholder1.jpeg",
     link: "https://github.com/JehanneH",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: ""
   },
   {
     id: 6,
     img: "/img/placeholder2.jpeg",
     link: "https://github.com/JehanneH",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: ""
   },
 ];

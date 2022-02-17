@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Projects from "./Projects";
 import { products } from "../data";
+import Link from "next/link";
 
 const PLContainer = styled.div`
   padding: 50px 100px;
@@ -27,6 +28,9 @@ const PLList = styled.div`
   justify-content: space-between;
   width: 100%;
 `;
+const LHL = styled(Link)`
+text-transform: uppercase;
+`
 
 const ProjectList = () => {
   return (
@@ -35,8 +39,12 @@ const ProjectList = () => {
         <PLTitle>Projects</PLTitle>
         <PLDesc>
           These are a few projects I have worked on on my own and in
-          collaboration with others, as well as during the Lightouse Labs Web
-          Development course
+          collaboration with others, as well as during the  <LHL href="https://www.lighthouselabs.ca/">
+          <a target="_blank">
+            Lighthouse Labs
+          </a>
+        </LHL> Web
+          Development Bootcamp
         </PLDesc>
       </PLTexts>
       <PLList>
