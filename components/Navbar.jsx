@@ -47,7 +47,8 @@ const Navbar = () => {
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link href="/about">About</Link>
+          <Link href="#about"
+          >About</Link>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
           <Link href="/projects">Projects</Link>

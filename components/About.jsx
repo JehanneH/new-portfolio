@@ -127,7 +127,7 @@ const About = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <AboutLeft>
         <LeftCardBg style={{ backgroundColor: darkMode && "#618572" }}></LeftCardBg>
         <LeftCard>

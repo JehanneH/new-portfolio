@@ -14,6 +14,8 @@ const ToggleContainer = styled.div`
 const UpArrow = styled(TiArrowUpOutline)`
   width: 25px;
   height: 25px;
+  cursor: pointer;
+  
 `;
 
 

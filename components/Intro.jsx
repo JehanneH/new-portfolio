@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { TiArrowDownOutline } from "react-icons/ti";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
+import {animateScroll as scroll} from 'react-scroll'
 
 const IntroContainer = styled.div`
   height: 75vh;
@@ -121,6 +122,11 @@ const DownArrow = styled(TiArrowDownOutline)`
 const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
+  const toggleScroll = () => {
+    scroll.scrollTo(800);
+  }
+
   return (
     <IntroContainer>
       <Container
@@ -157,7 +163,7 @@ const Intro = () => {
             </Title>
           </LeftWrapper>
           <Scroll>
-            <DownArrow />
+            <DownArrow onClick={toggleScroll}/>
           </Scroll>
         </IntroLeft>
         <IntroRight>
