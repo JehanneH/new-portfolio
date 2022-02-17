@@ -48,8 +48,8 @@ const Projects = ({ img, link, desc }) => {
           <PImg
             src={img}
             alt=""
-            width="68%"
-            height="89%"
+            width="69%"
+            height="90%"
             layout="responsive"
             objectFit="contain"
           />

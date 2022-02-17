@@ -28,9 +28,7 @@ const PLList = styled.div`
   justify-content: space-between;
   width: 100%;
 `;
-const LHL = styled(Link)`
-text-transform: uppercase;
-`
+
 
 const ProjectList = () => {
   return (
@@ -38,12 +36,12 @@ const ProjectList = () => {
       <PLTexts>
         <PLTitle>Projects</PLTitle>
         <PLDesc>
-          These are a few projects I have worked on on my own and in
-          collaboration with others, as well as during the  <LHL href="https://www.lighthouselabs.ca/">
-          <a target="_blank">
+          These are a few projects I have created on my own and in
+          collaboration with others, as well as during the  <Link href="https://www.lighthouselabs.ca/" >
+          <a target="_blank" style={{color: "#8080c9"}}>
             Lighthouse Labs
           </a>
-        </LHL> Web
+        </Link> Web
           Development Bootcamp
         </PLDesc>
       </PLTexts>
