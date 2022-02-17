@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { TiArrowUpOutline } from "react-icons/ti";
 import {animateScroll as scroll} from 'react-scroll'
+import { useEffect, useState } from "react";
 
 const ToggleContainer = styled.div`
   width: 50px;
@@ -9,6 +10,7 @@ const ToggleContainer = styled.div`
   bottom: 30px;
   right: 4px;
   z-index: 999;
+  display: ${({showScroll}) => (showScroll ? "block" : "none")};
 `;
 
 const UpArrow = styled(TiArrowUpOutline)`
@@ -20,13 +22,26 @@ const UpArrow = styled(TiArrowUpOutline)`
 
 
 const ToggleScrollUp = () => {
-
+  const [showScroll, setShowScroll] = useState(false)
   const toggleHome = () => {
     scroll.scrollToTop();
   }
+
+  const showScrollArrow = () => {
+    if (window.scrollY >= 100) {
+      setShowScroll(true)
+    } else {
+      setShowScroll(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', showScrollArrow);
+  }, [])
+
   return (
-    <ToggleContainer>
-      <UpArrow onClick={toggleHome}/>
+    <ToggleContainer showScroll={showScroll} >
+      <UpArrow  onClick={toggleHome}/>
     </ToggleContainer>
   );
 };

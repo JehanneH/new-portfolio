@@ -35,6 +35,7 @@ const ListItem = styled.li`
 const Navbar = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
   return (
     <Container
       style={{
@@ -47,14 +48,14 @@ const Navbar = () => {
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link href="#about"
+          <Link href=""
           >About</Link>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link href="/projects">Projects</Link>
+          <Link href="">Projects</Link>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link href="/projects">Contact</Link>
+          <Link href="">Contact</Link>
         </ListItem>
       </List>
     </Container>
