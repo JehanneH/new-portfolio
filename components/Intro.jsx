@@ -2,6 +2,8 @@ import Image from "next/image";
 import Circle from "./Circle";
 import styled, { keyframes } from "styled-components";
 import { BiDownArrow } from "react-icons/bi";
+import { useContext } from "react";
+import { ThemeContext } from "../context";
 
 const IntroContainer = styled.div`
   height: 75vh;
@@ -111,9 +113,11 @@ const Scroll = styled.div`
 `;
 
 const Intro = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <IntroContainer>
-      <Container>
+      <Container style={{background: darkMode && "radial-gradient(circle, #618572 0%, #513e63)100%"}}>
       <IntroLeft>
         <LeftWrapper>
           <Greeting>Hello, my name is</Greeting>
@@ -121,11 +125,11 @@ const Intro = () => {
           <TitleIntro>and I am...</TitleIntro>
           <Title>
             <TitleWrapper>
-              <TitleItem> a Web Developer</TitleItem>
-              <TitleItem> a Researcher</TitleItem>
-              <TitleItem>Creative</TitleItem>
-              <TitleItem>Organized</TitleItem>
-              <TitleItem>Hard Working</TitleItem>
+              <TitleItem style={{ color: darkMode && "#b1e6ca" }}> a Web Developer</TitleItem>
+              <TitleItem style={{ color: darkMode && "#b1e6ca" }}> a Researcher</TitleItem>
+              <TitleItem style={{ color: darkMode && "#b1e6ca" }}>Creative</TitleItem>
+              <TitleItem style={{ color: darkMode && "#b1e6ca" }}>Organized</TitleItem>
+              <TitleItem style={{ color: darkMode && "#b1e6ca" }}>Hard Working</TitleItem>
             </TitleWrapper>
           </Title>
         </LeftWrapper>
