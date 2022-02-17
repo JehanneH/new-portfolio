@@ -4,7 +4,8 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Intro from '../components/Intro'
 import ProjectList from '../components/ProjectList'
-import Toggle from '../components/Toggle'
+import ToggleDarkMode from '../components/ToggleDarkMode'
+import ToggleScrollUp from '../components/ToggleScrollUp'
 import { ThemeContext } from '../context'
 import styles from '../styles/Home.module.css'
 
@@ -21,11 +22,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-      <Toggle />
+      <ToggleDarkMode />
       <Intro />
       <About />
       <ProjectList />
       <Contact />
+      <ToggleScrollUp/>
     </div>
   )
 }

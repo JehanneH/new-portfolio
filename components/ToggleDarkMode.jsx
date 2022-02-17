@@ -38,7 +38,7 @@ const ToggleButton = styled.div`
   cursor: pointer;
 `;
 
-const Toggle = () => {
+const ToggleDarkMode = () => {
   const theme = useContext(ThemeContext);
 
   const handleClick = () => {
@@ -53,4 +53,4 @@ const Toggle = () => {
   );
 };
 
-export default Toggle;
+export default ToggleDarkMode;
