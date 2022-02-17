@@ -134,7 +134,7 @@ const Intro = () => {
         </Scroll>
       </IntroLeft>
       <IntroRight>
-        <StyledImage src="/img/intro-img.png" alt="" width={400} height={400} />
+        <StyledImage src="/img/intro-img.svg" alt="" width={600} height={400} />
       </IntroRight>
       </Container>
     </IntroContainer>
