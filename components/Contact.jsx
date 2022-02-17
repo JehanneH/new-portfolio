@@ -128,7 +128,7 @@ const Contact = () => {
 
   return (
     <ContactContainer>
-      <CBackground></CBackground>
+      <CBackground style={{ backgroundColor: darkMode && "#618572" }}></CBackground>
       <CWrapper>
         <CLeft>
           <CTitle>Please feel free to reach out!</CTitle>

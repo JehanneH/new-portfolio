@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { SiLinkedin, SiGithub, SiAngellist } from "react-icons/si";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
+import { useContext } from "react";
+import { ThemeContext } from "../context";
 
 const FContainer = styled.div`
   background-color: lavender;
@@ -62,8 +64,10 @@ const Resume = styled(BsFillPersonLinesFill)`
 `;
 
 const Footer = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <FContainer>
+    <FContainer style={{ backgroundColor: darkMode && "#513e63", color: darkMode && "white"}}>
       <SocialIcons>
         <Link href="https://www.linkedin.com/in/jehanne-hodge-8657251b3/">
           <a target="_blank">
