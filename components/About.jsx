@@ -128,7 +128,7 @@ const About = () => {
   return (
     <AboutContainer>
       <AboutLeft>
-        <LeftCardBg></LeftCardBg>
+        <LeftCardBg style={{ backgroundColor: darkMode && "#618572" }}></LeftCardBg>
         <LeftCard>
           <AboutImg
             src="/img/profilepic.jpg"
@@ -138,7 +138,7 @@ const About = () => {
           />
         </LeftCard>
       </AboutLeft>
-      <AboutRight style={{ backgroundColor: darkMode && "#a78ac2" }}>
+      <AboutRight style={{ backgroundColor: darkMode && "#513e63" }}>
         <AboutTitle>About Me</AboutTitle>
         <AboutSub>
           I am a Full-Stack Web Developer with a Master's degree in Sociology
