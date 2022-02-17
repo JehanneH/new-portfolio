@@ -49,7 +49,7 @@ const LeftCardBg = styled(LeftCard)`
   position: absolute;
   top: 170px;
   left: 145px;
-  background-color: #b1e6cad3;
+  background-color: #b1e6ca;
 `;
 
 const AboutImg = styled(Image)`

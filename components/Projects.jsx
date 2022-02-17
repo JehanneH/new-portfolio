@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useContext } from "react";
 import styled from "styled-components";
+import { ThemeContext } from "../context";
 
 const PContainer = styled.div`
   width: 30%;
@@ -36,9 +38,11 @@ const PImg = styled(Image)`
 `;
 
 const Projects = ({ img, link, desc }) => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <PContainer>
-      <PBrowser>
+    <PContainer style={{ borderColor: darkMode && "#3d4041" }}>
+      <PBrowser style={{ backgroundColor: darkMode && "#3d4041" }}>
         <PCircle></PCircle>
         <PCircle></PCircle>
         <PCircle></PCircle>

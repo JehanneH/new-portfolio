@@ -4,9 +4,19 @@ import styled, { keyframes } from "styled-components";
 import { BiDownArrow } from "react-icons/bi";
 
 const IntroContainer = styled.div`
-  display: flex;
   height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
+
+const Container = styled.div`
+display: flex;
+height: 70vh;
+width: 85%;
+background: rgb(177,230,202);
+background: radial-gradient(circle, rgba(177,230,202,1) 0%, rgba(230,230,250,1) 100%);
+`
 
 const IntroLeft = styled.div`
   flex: 1;
@@ -25,7 +35,7 @@ const IntroRight = styled.div`
 const LeftWrapper = styled.div`
   padding: 20px;
   margin-left: 3rem;
-  height: 50%;
+  height: 65%;
   /* border: solid 1px black;
   border-radius: 10px; */
   display: flex;
@@ -33,16 +43,18 @@ const LeftWrapper = styled.div`
   justify-content: center;
 `;
 const Greeting = styled.h2`
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
 `;
 const Name = styled.h1`
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 300;
 `;
+const TitleIntro=styled.p``
 
 const Title = styled.div`
-  height: 50px;
+  height: 40px;
+  padding-left: 10px;
   overflow: hidden;
 `;
 
@@ -74,7 +86,7 @@ const TitleItem = styled.div`
   height: 50px;
   font-size: 30px;
   font-weight: 400;
-  color: lightblue;
+  color: #69a285;
   display: flex;
   align-items: center;
 `;
@@ -87,24 +99,28 @@ const Scroll = styled.div`
   width: 30px;
   height: 30px;
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
+  font-size: 20px;
+  cursor: pointer;
 `;
 
 const Intro = () => {
   return (
     <IntroContainer>
+      <Container>
       <IntroLeft>
         <LeftWrapper>
           <Greeting>Hello, my name is</Greeting>
           <Name>Jehanne Hodge</Name>
+          <TitleIntro>and I am...</TitleIntro>
           <Title>
             <TitleWrapper>
-              <TitleItem>Web Developer</TitleItem>
-              <TitleItem>Researcher</TitleItem>
+              <TitleItem> a Web Developer</TitleItem>
+              <TitleItem> a Researcher</TitleItem>
               <TitleItem>Creative</TitleItem>
               <TitleItem>Organized</TitleItem>
-              <TitleItem>Teamwork</TitleItem>
+              <TitleItem>Hard Working</TitleItem>
             </TitleWrapper>
           </Title>
         </LeftWrapper>
@@ -115,6 +131,7 @@ const Intro = () => {
       <IntroRight>
         <StyledImage src="/img/intro-img.png" alt="" width={400} height={400} />
       </IntroRight>
+      </Container>
     </IntroContainer>
   );
 };
