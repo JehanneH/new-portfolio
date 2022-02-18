@@ -1,14 +1,14 @@
 export const products = [
   {
     id: 1,
-    img: "/img/wineryfullpage.png",
+    img: "/img/winery.png",
     link: "https://itsmywine.netlify.app/",
     desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
   },
   {
     id: 2,
-    img: "/img/placeholder2.jpeg",
-    link: "https://github.com/JehanneH",
+    img: "/img/ReForest-Home.jpeg",
+    link: "https://github.com/lib3rate/which-bin-app",
     desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
   },
   {
@@ -25,14 +25,14 @@ export const products = [
   },
   {
     id: 5,
-    img: "/img/scheduler.png",
+    img: "/img/scheduler1.png",
     link: "https://github.com/JehanneH/scheduler",
     desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
   },
   {
     id: 6,
-    img: "/img/placeholder2.jpeg",
-    link: "https://github.com/JehanneH",
+    img: "/img/portfolio.png",
+    link: "https://github.com/JehanneH/new-portfolio",
     desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
   },
 ];

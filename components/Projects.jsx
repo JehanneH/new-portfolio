@@ -17,7 +17,7 @@ const Desc = styled.div`
 
 const PContainer = styled.div`
   width: 30%;
-  height: 40vh;
+  height: 31vh;
   margin: 20px 10px;
   border: 2px solid rgb(232, 234, 237);
   border-radius: 10px 10px 0px 0px;
@@ -83,10 +83,10 @@ const Projects = ({ img, link, desc }) => {
           <PImg
             src={img}
             alt=""
-            width="69%"
-            height="90%"
+            width={100}
+            height={55}
             layout="responsive"
-            objectFit="contain"
+            objectFit="fill"
           />
         </a>
       </Link>
