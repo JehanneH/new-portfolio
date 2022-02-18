@@ -9,7 +9,7 @@ export const products = [
     id: 2,
     img: "/img/ReForest-Home.jpeg",
     link: "https://github.com/lib3rate/which-bin-app",
-    desc: "Helps determine where to discard items (recycling, compost or garbage) through machine learning recognition.Created using AWS, React, PostgreSQL, Material UI and Auth0. Final project for Lighthouse Labs Bootcamp"
+    desc: "Determine where to discard items (recycling, compost or garbage) through machine learning recognition.Created using AWS, React, PostgreSQL, Material UI and Auth0. Final project for Lighthouse Labs Bootcamp"
   },
   {
     id: 3,
@@ -33,6 +33,6 @@ export const products = [
     id: 6,
     img: "/img/portfolio.png",
     link: "https://github.com/JehanneH/new-portfolio",
-    desc: "My current portfolio. Created with Next.js and Styled Components"
+    desc: "My current portfolio. Created with Next.js and Styled Components. Status: Alway in progress, as I am always learning"
   },
 ];
