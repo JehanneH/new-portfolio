@@ -4,6 +4,17 @@ import { useContext } from "react";
 import styled from "styled-components";
 import { ThemeContext } from "../context";
 
+const Desc = styled.div`
+  width: 70%;
+  /* position: absolute; */
+  z-index: 999;
+  background: #d3d3d3d9;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 1s ease;
+`;
+
 const PContainer = styled.div`
   width: 30%;
   height: 40vh;
@@ -12,6 +23,9 @@ const PContainer = styled.div`
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
   position: relative;
+  &:hover ${Desc} {
+    opacity: 1;
+  }
 `;
 const PBrowser = styled.div`
   height: 20px;
@@ -29,17 +43,6 @@ const PCircle = styled.div`
   margin: 3px;
   background-color: white;
 `;
-const PImg = styled(Image)`
-  /* hover for scroll effect taken out for now for multi page sites and fit */
-  /* transition: all 8s ease;
-  &:hover {
-    transform: translateY(-45%);
-  } */
-
-  &:hover {
-    opacity: 1;
-  }
-`;
 
 const DescContainer = styled.div`
   width: 100%;
@@ -50,14 +53,12 @@ const DescContainer = styled.div`
   justify-content: center;
 `;
 
-const Desc = styled.div`
-  width: 70%;
-  /* position: absolute; */
-  z-index: 999;
-  background: #d3d3d3c9;
-  padding: 20px;
-  border-radius: 10px;
-  opacity: 0;
+const PImg = styled(Image)`
+  /* hover for scroll effect taken out for now for multi page sites and fit */
+  /* transition: all 8s ease;
+  &:hover {
+    transform: translateY(-45%);
+  } */
 `;
 
 const Projects = ({ img, link, desc }) => {
@@ -73,7 +74,7 @@ const Projects = ({ img, link, desc }) => {
       <Link href={link}>
         <a target="_blank">
           <DescContainer>
-            <Desc>{desc}</Desc>
+            <Desc style={{ backgroundColor: darkMode && "#3d4041ea" }}>{desc}</Desc>
           </DescContainer>
         </a>
       </Link>
