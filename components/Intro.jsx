@@ -125,7 +125,7 @@ const Intro = () => {
   // }
 
   return (
-    <IntroContainer>
+    <IntroContainer id="home">
       <Container
         style={{
           background:

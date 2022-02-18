@@ -45,7 +45,7 @@ const Navbar = () => {
       }}
     >
       <Title>
-        <Link>JH</Link>
+        <Link to="home">JH</Link>
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
