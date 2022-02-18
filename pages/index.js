@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <div style={{backgroundColor: darkMode ? "#222" : "white", color: darkMode && "white" }}>
       <Head>
-        <title>JH Portfolio</title>
+        <title>Jehanne Hodge</title>
         <meta name="description" content="created by Jehanne Hodge" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/icon.png" />
         
       </Head>
       <ToggleDarkMode />
