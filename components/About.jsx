@@ -144,17 +144,17 @@ const About = () => {
       <AboutRight style={{ backgroundColor: darkMode && "#513e63" }}>
         <AboutTitle>About Me</AboutTitle>
         <AboutSub>
-          I am a Full-Stack Web Developer with a Master's degree in Sociology
+          I am a Full-Stack Web Developer with a Master&apos;s degree in Sociology
           and Gender Studies
         </AboutSub>
         <AboutDesc>
           I enjoy the challenge of learning new languages and frameworks. My
           diverse background has taught me to be flexible and adaptable to new
-          situations. As a Master's student I furthered my independent working
+          situations. As a Master&apos;s student I furthered my independent working
           skills and initiative, in addition to becoming a dedicated researcher.
           All these qualities contribute to my journey as a lifelong learner.
           <br />
-          My main passion is for Front-End and I'm interested in expanding my
+          My main passion is for Front-End and I&apos;m interested in expanding my
           UI/UX deisgn skills.
           <br />
           In my spare time I like to enjoy the outdoors and nature any way that

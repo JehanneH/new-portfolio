@@ -148,7 +148,7 @@ const Contact = () => {
         </CLeft>
         <CRight>
           <RDesc>
-            Send me a message if you're interested in working with me:
+            Send me a message if you&apos;re interested in working with me:
           </RDesc>
           <Form ref={formRef} onSubmit={handleSubmit}>
             <Input
