@@ -76,7 +76,7 @@ const Input = styled.input`
 `;
 const TextArea = styled.textarea`
   width: 90%;
-  height: 20rem;
+  height: 10rem;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
@@ -128,8 +128,10 @@ const Contact = () => {
   };
 
   return (
-    <ContactContainer>
-      <CBackground style={{ backgroundColor: darkMode && "#618572" }}></CBackground>
+    <ContactContainer id="contact">
+      <CBackground
+        style={{ backgroundColor: darkMode && "#618572" }}
+      ></CBackground>
       <CWrapper>
         <CLeft>
           <CTitle>Please feel free to reach out!</CTitle>
@@ -174,7 +176,6 @@ const Contact = () => {
             ></TextArea>
             <Button>Submit</Button>
             <DoneMessage>
-              {" "}
               {done && "Thank You! Your message has been sent :)"}
             </DoneMessage>
           </Form>

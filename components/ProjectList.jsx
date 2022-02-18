@@ -29,25 +29,30 @@ const PLList = styled.div`
   width: 100%;
 `;
 
-
 const ProjectList = () => {
   return (
     <PLContainer>
-      <PLTexts>
+      <PLTexts id="projects">
         <PLTitle>Projects</PLTitle>
         <PLDesc>
-          These are a few projects I have created on my own and in
-          collaboration with others, as well as during the  <Link href="https://www.lighthouselabs.ca/" >
-          <a target="_blank" style={{color: "#8080c9"}}>
-            Lighthouse Labs
-          </a>
-        </Link> Web
-          Development Bootcamp
+          These are a few projects I have created on my own and in collaboration
+          with others, as well as during the{" "}
+          <Link href="https://www.lighthouselabs.ca/">
+            <a target="_blank" style={{ color: "#8080c9" }}>
+              Lighthouse Labs
+            </a>
+          </Link>{" "}
+          Web Development Bootcamp
         </PLDesc>
       </PLTexts>
       <PLList>
         {products.map((item) => (
-          <Projects key={item.id} img={item.img} link={item.link} desc={item.desc}/>
+          <Projects
+            key={item.id}
+            img={item.img}
+            link={item.link}
+            desc={item.desc}
+          />
         ))}
       </PLList>
     </PLContainer>

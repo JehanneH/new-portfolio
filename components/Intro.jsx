@@ -3,10 +3,10 @@ import styled, { keyframes } from "styled-components";
 import { TiArrowDownOutline } from "react-icons/ti";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
-import {animateScroll as scroll} from 'react-scroll'
+import {Link} from 'react-scroll'
 
 const IntroContainer = styled.div`
-  height: 75vh;
+  height: 78vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,13 +104,10 @@ const StyledImage = styled(Image)`
   object-fit: cover;
 `;
 
-const Scroll = styled.div`
-  width: 30px;
-  height: 30px;
+const Scroll = styled(Link)`
   position: absolute;
-  bottom: 50px;
+  bottom: 7%;
   left: 50%;
-  font-size: 20px;
   cursor: pointer;
 `;
 
@@ -123,9 +120,9 @@ const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
-  const toggleScroll = () => {
-    scroll.scrollTo(800);
-  }
+  // const toggleScroll = () => {
+  //   scroll.scrollTo(800);
+  // }
 
   return (
     <IntroContainer>
@@ -162,8 +159,8 @@ const Intro = () => {
               </TitleWrapper>
             </Title>
           </LeftWrapper>
-          <Scroll>
-            <DownArrow onClick={toggleScroll}/>
+          <Scroll to='about' smooth={true} duration={500} spy={true}>
+            <DownArrow />
           </Scroll>
         </IntroLeft>
         <IntroRight>

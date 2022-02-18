@@ -1,7 +1,8 @@
-import Link from "next/link";
+// import Link from "next/link";
 import styled from "styled-components";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
+import {Link} from 'react-scroll'
 
 const Container = styled.div`
   height: 15vh;
@@ -44,18 +45,18 @@ const Navbar = () => {
       }}
     >
       <Title>
-        <Link href="/">JH</Link>
+        <Link>JH</Link>
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link href=""
+          <Link to='about' smooth={true} duration={500} spy={true}
           >About</Link>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link href="">Projects</Link>
+          <Link to='projects' smooth={true} duration={500} spy={true}>Projects</Link>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link href="">Contact</Link>
+          <Link to='contact' smooth={true} duration={500} spy={true}>Contact</Link>
         </ListItem>
       </List>
     </Container>

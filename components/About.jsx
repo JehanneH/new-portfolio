@@ -129,7 +129,9 @@ const About = () => {
   return (
     <AboutContainer id="about">
       <AboutLeft>
-        <LeftCardBg style={{ backgroundColor: darkMode && "#618572" }}></LeftCardBg>
+        <LeftCardBg
+          style={{ backgroundColor: darkMode && "#618572" }}
+        ></LeftCardBg>
         <LeftCard>
           <AboutImg
             src="/img/profilepic.jpg"
@@ -151,8 +153,12 @@ const About = () => {
           situations. As a Master's student I furthered my independent working
           skills and initiative, in addition to becoming a dedicated researcher.
           All these qualities contribute to my journey as a lifelong learner.
-          <br />My main passion is for Front-End and I'm interested in expanding my UI/UX deisgn skills.
-          <br />In my spare time I like to enjoy the outdoors and nature any way that I can.
+          <br />
+          My main passion is for Front-End and I'm interested in expanding my
+          UI/UX deisgn skills.
+          <br />
+          In my spare time I like to enjoy the outdoors and nature any way that
+          I can.
         </AboutDesc>
         <AboutSkills>
           <SkillsTitle>My Skills</SkillsTitle>
