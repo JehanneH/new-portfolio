@@ -5,19 +5,24 @@ import styled from "styled-components";
 import { ThemeContext } from "../context";
 
 const Desc = styled.div`
-  width: 70%;
+  width: 90%;
   /* position: absolute; */
   z-index: 999;
-  background: #d3d3d3e5;
+  background: #d3d3d3e7;
   padding: 10px;
   border-radius: 10px;
+  font-size: 14px;
   opacity: 0;
   transition: all 1s ease;
+  @media (max-width: 1214px) {
+    font-size: 12px;
+    padding: 5px;
+  }
 `;
 
 const PContainer = styled.div`
   width: 30%;
-  height: 31vh;
+  height: 50%;
   margin: 20px 10px;
   border: 2px solid rgb(232, 234, 237);
   border-radius: 10px 10px 0px 0px;
@@ -74,9 +79,7 @@ const Projects = ({ img, link, desc }) => {
       <Link href={link}>
         <a target="_blank">
           <DescContainer>
-            <Desc style={{ backgroundColor: darkMode && "#3d4041ea" }}>
-              {desc}
-            </Desc>
+            <Desc style={{ backgroundColor: darkMode && "#3d4041ea" }}>{desc}</Desc>
           </DescContainer>
         </a>
       </Link>
