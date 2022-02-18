@@ -8,7 +8,7 @@ const Desc = styled.div`
   width: 70%;
   /* position: absolute; */
   z-index: 999;
-  background: #d3d3d3d9;
+  background: #d3d3d3e5;
   padding: 10px;
   border-radius: 10px;
   opacity: 0;
