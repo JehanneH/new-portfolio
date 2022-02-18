@@ -11,6 +11,7 @@ const PContainer = styled.div`
   border: 2px solid rgb(232, 234, 237);
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
+  position: relative;
 `;
 const PBrowser = styled.div`
   height: 20px;
@@ -29,12 +30,34 @@ const PCircle = styled.div`
   background-color: white;
 `;
 const PImg = styled(Image)`
-  transition: all 8s ease;
-
-
+  /* hover for scroll effect taken out for now for multi page sites and fit */
+  /* transition: all 8s ease;
   &:hover {
     transform: translateY(-45%);
+  } */
+
+  &:hover {
+    opacity: 1;
   }
+`;
+
+const DescContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Desc = styled.div`
+  width: 70%;
+  /* position: absolute; */
+  z-index: 999;
+  background: #d3d3d3c9;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
 `;
 
 const Projects = ({ img, link, desc }) => {
@@ -47,6 +70,13 @@ const Projects = ({ img, link, desc }) => {
         <PCircle></PCircle>
         <PCircle></PCircle>
       </PBrowser>
+      <Link href={link}>
+        <a target="_blank">
+          <DescContainer>
+            <Desc>{desc}</Desc>
+          </DescContainer>
+        </a>
+      </Link>
       <Link href={link}>
         <a target="_blank">
           <PImg
