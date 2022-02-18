@@ -74,7 +74,9 @@ const Projects = ({ img, link, desc }) => {
       <Link href={link}>
         <a target="_blank">
           <DescContainer>
-            <Desc style={{ backgroundColor: darkMode && "#3d4041ea" }}>{desc}</Desc>
+            <Desc style={{ backgroundColor: darkMode && "#3d4041ea" }}>
+              {desc}
+            </Desc>
           </DescContainer>
         </a>
       </Link>

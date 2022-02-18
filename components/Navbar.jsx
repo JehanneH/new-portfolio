@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 
 const Container = styled.div`
   height: 15vh;
@@ -49,14 +49,19 @@ const Navbar = () => {
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link to='about' smooth={true} duration={500} spy={true}
-          >About</Link>
+          <Link to="about" smooth={true} duration={500} spy={true}>
+            About
+          </Link>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link to='projects' smooth={true} duration={500} spy={true}>Projects</Link>
+          <Link to="projects" smooth={true} duration={500} spy={true}>
+            Projects
+          </Link>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link to='contact' smooth={true} duration={500} spy={true}>Contact</Link>
+          <Link to="contact" smooth={true} duration={500} spy={true}>
+            Contact
+          </Link>
         </ListItem>
       </List>
     </Container>

@@ -27,7 +27,7 @@ const LinkedIn = styled(SiLinkedin)`
   width: 30px;
   height: 30px;
   cursor: pointer;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   &:hover {
     transform: scale(1.2);
   }
@@ -37,7 +37,7 @@ const Github = styled(SiGithub)`
   width: 30px;
   height: 30px;
   cursor: pointer;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   &:hover {
     transform: scale(1.2);
   }
@@ -47,7 +47,7 @@ const AngelList = styled(SiAngellist)`
   width: 30px;
   height: 30px;
   cursor: pointer;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   &:hover {
     transform: scale(1.2);
   }
@@ -57,7 +57,7 @@ const Resume = styled(BsFillPersonLinesFill)`
   width: 30px;
   height: 30px;
   cursor: pointer;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   &:hover {
     transform: scale(1.2);
   }
@@ -67,7 +67,12 @@ const Footer = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <FContainer style={{ backgroundColor: darkMode && "#513e63", color: darkMode && "white"}}>
+    <FContainer
+      style={{
+        backgroundColor: darkMode && "#513e63",
+        color: darkMode && "white",
+      }}
+    >
       <SocialIcons>
         <Link href="https://www.linkedin.com/in/jehanne-hodge-8657251b3/">
           <a target="_blank">

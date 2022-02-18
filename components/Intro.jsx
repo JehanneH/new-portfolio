@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { TiArrowDownOutline } from "react-icons/ti";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 
 const IntroContainer = styled.div`
   height: 78vh;
@@ -159,7 +159,7 @@ const Intro = () => {
               </TitleWrapper>
             </Title>
           </LeftWrapper>
-          <Scroll to='about' smooth={true} duration={500} spy={true}>
+          <Scroll to="about" smooth={true} duration={500} spy={true}>
             <DownArrow />
           </Scroll>
         </IntroLeft>
