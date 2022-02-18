@@ -89,7 +89,7 @@ const Footer = () => {
             <Github />
           </a>
         </Link>
-        <Link href="https://www.canva.com/design/DAECeK-dAJ0/QDBrJSeb_zlnDxHSnK_b6g/edit?category=tACZCki4tbY">
+        <Link href="https://www.canva.com/design/DAECeK-dAJ0/-P50nh3BohEtlLegyp-RRg/view?utm_content=DAECeK-dAJ0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
           <a target="_blank">
             <Resume />
           </a>
