@@ -3,36 +3,36 @@ export const products = [
     id: 1,
     img: "/img/winery.png",
     link: "https://itsmywine.netlify.app/",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: "Design and edit custom wine labels, using React, Konva, Bulma.io and Stripe. Created in collaboration with two other devs, for a client. Status: In progress"
   },
   {
     id: 2,
     img: "/img/ReForest-Home.jpeg",
     link: "https://github.com/lib3rate/which-bin-app",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: "Helps determine where to discard items (recycling, compost or garbage) through machine learning recognition.Created using AWS, React, PostgreSQL, Material UI and Auth0. Final project for Lighthouse Labs Bootcamp"
   },
   {
     id: 3,
     img: "/img/tweeter.png",
     link: "https://github.com/JehanneH/tweeter",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: "Tweeter is a simple, single-page Twitter clone using HTML, CSS, JS, jQuery and AJAX. Created during Lighthouse Labs Bootcamp"
   },
   {
     id: 4,
     img: "/img/shoppies.png",
     link: "https://sad-pike-030d48.netlify.app/",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: "Search movies and nominate them. Created using React, Evergreen UI and OMDb Api. This was a project challenge for the Shopify Winter 2021 internship"
   },
   {
     id: 5,
     img: "/img/scheduler1.png",
     link: "https://github.com/JehanneH/scheduler",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: "The Interview Scheduler is a React application that allows users to book and cancel interviews. Created during Lighthouse Labs Bootcamp"
   },
   {
     id: 6,
     img: "/img/portfolio.png",
     link: "https://github.com/JehanneH/new-portfolio",
-    desc: "Create custom wine labels. Created in collaboration with two other web developers for a client. In progress"
+    desc: "My current portfolio. Created with Next.js and Styled Components"
   },
 ];
