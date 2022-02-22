@@ -8,7 +8,8 @@ const Desc = styled.div`
   width: 90%;
   /* position: absolute; */
   z-index: 999;
-  background: #d3d3d3e7;
+  /* background: #d3d3d3e7; */
+  background: #e6e6fae7;
   padding: 10px;
   border-radius: 10px;
   font-size: 14px;
@@ -79,7 +80,7 @@ const Projects = ({ img, link, desc }) => {
       <Link href={link}>
         <a target="_blank">
           <DescContainer>
-            <Desc style={{ backgroundColor: darkMode && "#3d4041ea" }}>{desc}</Desc>
+            <Desc style={{ backgroundColor: darkMode && "#513e63e7" }}>{desc}</Desc>
           </DescContainer>
         </a>
       </Link>
