@@ -209,7 +209,7 @@ const About = () => {
         ></LeftCardBg>
         <LeftCard>
           <AboutImg
-            src="/img/profilepic.jpg"
+            src="/img/aboutpic.jpg"
             alt=""
             layout="fill"
             objectFit="cover"
