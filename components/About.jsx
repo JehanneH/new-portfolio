@@ -234,7 +234,7 @@ const About = () => {
           my UI/UX deisgn skills.
           <br />
           In my spare time I like to enjoy the outdoors and nature any way that
-          I can.
+          I can. I also love working on new knitting/crochet projects.
         </AboutDesc>
         <AboutLinks>
           <LinkItem>
