@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 import {
   SiJavascript,
   SiPostgresql,
@@ -67,6 +68,37 @@ const AboutDesc = styled.p`
   font-weight: 300;
   margin-right: 40px;
 `;
+
+const AboutLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 30%;
+`;
+
+const LinkItem = styled.div`
+  text-decoration: none;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease-in;
+  }
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+`;
+
 const AboutSkills = styled.div``;
 
 const SkillsTitle = styled.h3`
@@ -74,7 +106,7 @@ const SkillsTitle = styled.h3`
 `;
 
 const Skills = styled.ul`
-  padding: 0 2rem 2rem 0;
+  padding: 0;
   margin: 0;
 `;
 
@@ -85,42 +117,85 @@ const SkillsList = styled.li`
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 20px;
 `;
 
 const JS = styled(SiJavascript)`
   color: #f0db4f;
-  background: black;
+  background: #181818;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const HTML = styled(SiHtml5)`
   color: #f16529;
+  background: white;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const CSS = styled(SiCss3)`
   color: #264de4;
+  background: white;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const SASS = styled(SiSass)`
   color: #cc6699;
+  background: white;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const StyledComps = styled(SiStyledcomponents)`
   color: #e7b8ed;
-  font-size: 3rem;
+  background: #3c3c3c;
+  padding: 3px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const SQL = styled(SiPostgresql)`
   color: #336791;
+  background: white;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const JQuery = styled(SiJquery)`
-  color: #0769ad;
+  color: #78cff5;
+  background: #0769ad;
+  padding: 6px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const React = styled(SiReact)`
   color: #61dbfb;
+  background: #212329;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const Next = styled(SiNextdotjs)`
   color: #121212;
+  background: white;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const Node = styled(SiNodedotjs)`
   color: #3c873a;
+  background: #333333;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 const Git = styled(SiGit)`
   color: #f1502f;
+  background: #f0f0e9;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 4px;
 `;
 
 const About = () => {
@@ -144,22 +219,40 @@ const About = () => {
       <AboutRight style={{ backgroundColor: darkMode && "#513e63" }}>
         <AboutTitle>About Me</AboutTitle>
         <AboutSub>
-          I am a Full-Stack Web Developer with a Master&apos;s degree in Sociology
-          and Gender Studies
+          I am a Full-Stack Web Developer with a Master&apos;s degree in
+          Sociology and Gender Studies
         </AboutSub>
         <AboutDesc>
           I enjoy the challenge of learning new languages and frameworks. My
           diverse background has taught me to be flexible and adaptable to new
-          situations. As a Master&apos;s student I furthered my independent working
-          skills and initiative, in addition to becoming a dedicated researcher.
-          All these qualities contribute to my journey as a lifelong learner.
+          situations. As a Master&apos;s student I furthered my independent
+          working skills and initiative, in addition to becoming a dedicated
+          researcher. All these qualities contribute to my journey as a lifelong
+          learner.
           <br />
-          My main passion is for Front-End and I&apos;m interested in expanding my
-          UI/UX deisgn skills.
+          My main passion is for Front-End and I&apos;m interested in expanding
+          my UI/UX deisgn skills.
           <br />
           In my spare time I like to enjoy the outdoors and nature any way that
           I can.
         </AboutDesc>
+        <AboutLinks>
+          <LinkItem>
+            <Link href="https://www.canva.com/design/DAECeK-dAJ0/-P50nh3BohEtlLegyp-RRg/view?utm_content=DAECeK-dAJ0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+              <a target="_blank">Resume</a>
+            </Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="https://github.com/JehanneH">
+              <a target="_blank">Github</a>
+            </Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="https://www.linkedin.com/in/jehanne-hodge-8657251b3/">
+              <a target="_blank">LinkedIn</a>
+            </Link>
+          </LinkItem>
+        </AboutLinks>
         <AboutSkills>
           <SkillsTitle>My Skills</SkillsTitle>
           <SkillsList>
