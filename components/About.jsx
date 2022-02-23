@@ -231,7 +231,7 @@ const About = () => {
           learner.
           <br />
           My main passion is for Front-End and I&apos;m interested in expanding
-          my UI/UX deisgn skills.
+          my UI/UX design skills.
           <br />
           In my spare time I like to enjoy the outdoors and nature any way that
           I can. I also love working on new knitting/crochet projects.
