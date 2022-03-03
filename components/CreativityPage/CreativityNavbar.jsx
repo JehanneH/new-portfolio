@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { useContext } from "react";
-import { ThemeContext } from "../context";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
+import { ThemeContext } from "../../context";
+import { useContext } from "react";
 
 const Container = styled.div`
   height: 15vh;

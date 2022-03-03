@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import ArtLayout from "../components/ArtLayout";
+import CreativityLayout from "../components/CreativityPage/CreativityLayout";
 import { ThemeProvider } from "../context";
 import "../styles/globals.css";
 
@@ -7,9 +7,9 @@ function MyApp({ Component, pageProps, router }) {
   if (router.pathname.startsWith('/creativity')) {
     return (
       <ThemeProvider>
-        <ArtLayout>
+        <CreativityLayout>
           <Component {...pageProps} />
-        </ArtLayout>
+        </CreativityLayout>
       </ThemeProvider>
     );
 }
