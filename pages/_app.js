@@ -4,7 +4,7 @@ import { ThemeProvider } from "../context";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps, router }) {
-  if (router.pathname.startsWith('/art')) {
+  if (router.pathname.startsWith('/creativity')) {
     return (
       <ThemeProvider>
         <ArtLayout>

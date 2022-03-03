@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function Art() {
+export default function Creativity() {
 
   return (
     <div>

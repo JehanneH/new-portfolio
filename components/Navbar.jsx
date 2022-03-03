@@ -1,8 +1,9 @@
-// import Link from "next/link";
 import styled from "styled-components";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
-import { Link } from "react-scroll";
+import Link from "next/link";
+import { Link as ScrollLink} from "react-scroll";
+
 
 const Container = styled.div`
   height: 15vh;
@@ -45,22 +46,27 @@ const Navbar = () => {
       }}
     >
       <Title>
-        <Link to="home">JH</Link>
+        <ScrollLink to="home">JH</ScrollLink>
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link to="about" smooth={true} duration={500} spy={true}>
+          <ScrollLink to="about" smooth={true} duration={500} spy={true}>
             About
-          </Link>
+          </ScrollLink>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link to="projects" smooth={true} duration={500} spy={true}>
+          <ScrollLink to="projects" smooth={true} duration={500} spy={true}>
             Projects
-          </Link>
+          </ScrollLink>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <Link to="contact" smooth={true} duration={500} spy={true}>
+          <ScrollLink to="contact" smooth={true} duration={500} spy={true}>
             Contact
+          </ScrollLink>
+        </ListItem>
+        <ListItem style={{ color: darkMode && "white" }}>
+          <Link href="/creativity">
+            <a>Creativity</a>
           </Link>
         </ListItem>
       </List>
