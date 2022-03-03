@@ -40,27 +40,22 @@ const Navbar = () => {
       }}
     >
       <Title>
-        <ScrollLink to="home">JH</ScrollLink>
+        <Link href="/"><a>JH</a></Link>
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
-          <ScrollLink to="about" smooth={true} duration={500} spy={true}>
-            About
+          <ScrollLink to="yarn" smooth={true} duration={500} spy={true}>
+            Yarn
           </ScrollLink>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <ScrollLink to="projects" smooth={true} duration={500} spy={true}>
-            Projects
+          <ScrollLink to="cards" smooth={true} duration={500} spy={true}>
+            Cards
           </ScrollLink>
         </ListItem>
         <ListItem style={{ color: darkMode && "white" }}>
-          <ScrollLink to="contact" smooth={true} duration={500} spy={true}>
-            Contact
-          </ScrollLink>
-        </ListItem>
-        <ListItem style={{ color: darkMode && "white" }}>
-          <Link href="/creativity">
-            <a>Creativity</a>
+          <Link href="/">
+            <a>Back</a>
           </Link>
         </ListItem>
       </List>

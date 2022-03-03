@@ -40,7 +40,7 @@ const Navbar = () => {
       }}
     >
       <Title>
-        <ScrollLink to="home">JH</ScrollLink>
+      <Link href="/"><a>JH</a></Link>
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
