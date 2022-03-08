@@ -1,8 +1,8 @@
 // import Image from "next/image";
 import styled, { keyframes } from "styled-components";
 import { TiArrowDownOutline } from "react-icons/ti";
-// import { useContext } from "react";
-// import { ThemeContext } from "../context";
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 // import { Link } from "react-scroll";
 
 const CIntro = styled.div`
@@ -39,9 +39,14 @@ const DownArrow = styled(TiArrowDownOutline)`
 `;
 
 const CreativityIntro = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <CIntro>
-      <CIntroContainer>
+      <CIntroContainer  style={{
+          background:
+            darkMode && "radial-gradient(circle, #618572 0%, #513e63)100%",
+        }}>
         <IntroDesc>
         In my spare  time I enjoy being creative away from a screen.
         <br />

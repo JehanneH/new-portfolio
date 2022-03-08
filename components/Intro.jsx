@@ -120,10 +120,6 @@ const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
-  // const toggleScroll = () => {
-  //   scroll.scrollTo(800);
-  // }
-
   return (
     <IntroContainer id="home">
       <Container
