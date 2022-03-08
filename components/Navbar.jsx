@@ -60,11 +60,11 @@ const Navbar = () => {
             Contact
           </ScrollLink>
         </ListItem>
-        {/* <ListItem style={{ color: darkMode && "white" }}>
+        <ListItem>
           <Link href="/creativity">
-            <a>Creativity</a>
+            <a style={{ color: darkMode && "white" }}>Creativity</a>
           </Link>
-        </ListItem> */}
+        </ListItem>
       </List>
     </Container>
   );

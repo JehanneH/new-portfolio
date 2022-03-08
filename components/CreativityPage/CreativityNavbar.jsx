@@ -40,7 +40,9 @@ const Navbar = () => {
       }}
     >
       <Title>
-        <Link href="/"><a>JH</a></Link>
+        <Link href="/">
+          <a style={{ color: darkMode && "white" }}>JH</a>
+        </Link>
       </Title>
       <List>
         <ListItem style={{ color: darkMode && "white" }}>
@@ -53,9 +55,9 @@ const Navbar = () => {
             Cards
           </ScrollLink>
         </ListItem>
-        <ListItem style={{ color: darkMode && "white" }}>
+        <ListItem>
           <Link href="/">
-            <a>Back</a>
+            <a style={{ color: darkMode && "white" }}>Back</a>
           </Link>
         </ListItem>
       </List>
