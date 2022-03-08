@@ -1,4 +1,10 @@
+import Image from "next/image";
 import styled from "styled-components";
+import { knitting } from "../../knitting";
+import { KnittingProjects } from "./KnittingProjects";
+
+
+
 
 const YarnContainer = styled.div`
   height: 100vh;
@@ -24,7 +30,15 @@ font-weight: 00;
 padding: 0 6rem;
 `
 
-const KnitProjectsContainer = styled.div``
+const KnitProjectsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  width: 90%;
+  height: 60vh;
+  border: 1px solid blue;
+  `
 
 
 const CrochetProjectsContainer = styled.div``
@@ -41,7 +55,14 @@ const Yarn = () => {
     <br />
     At the end of 2019 I really got back into it and haven&apos;t stopped since. 
     </KnitDesc>
-    <KnitProjectsContainer></KnitProjectsContainer>
+    <KnitProjectsContainer>
+    {/* {knitting.map((item) => (
+          <KnittingProjects
+            key={item.id}
+            img={item.img}
+          />
+        ))} */}
+    </KnitProjectsContainer>
     <CrochetDesc>
     I taught myself how to crochet in 2021. I mainly enjoy making different creations with granny squares.
     </CrochetDesc>
