@@ -3,6 +3,7 @@ import ToggleDarkMode from '../components/ToggleDarkMode'
 import CreativityIntro from "../components/CreativityPage/CreativityIntro"
 import { ThemeContext } from '../context'
 import { useContext } from "react";
+import Yarn from '../components/CreativityPage/Yarn';
 
 export default function Creativity() {
   const theme = useContext(ThemeContext)
@@ -16,6 +17,7 @@ export default function Creativity() {
       </Head>
       <ToggleDarkMode />
       <CreativityIntro />
+      <Yarn/>
     </div>
   )
 }
