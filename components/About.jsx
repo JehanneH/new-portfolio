@@ -235,7 +235,7 @@ const About = () => {
             <a target="_blank" style={{ color: "#8080c9" }}>
               Kyndryl
             </a>
-          </Link>, as part of an Early Professional Hire program and learning on the job to become a mainframe systems programmer.
+          </Link>, as part of the Early Professional Hire Program, learning on the job to become a mainframe systems programmer.
           <br />
           <br />
           In my spare time I like to enjoy the outdoors and nature any way that
