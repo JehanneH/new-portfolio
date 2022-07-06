@@ -248,7 +248,7 @@ const About = () => {
             </Link>
           </LinkItem>
           <LinkItem>
-            <Link href="https://www.linkedin.com/in/jehanne-hodge-8657251b3/">
+            <Link href="https://www.linkedin.com/in/samarah-jehanne-hodge-8657251b3/">
               <a target="_blank">LinkedIn</a>
             </Link>
           </LinkItem>
