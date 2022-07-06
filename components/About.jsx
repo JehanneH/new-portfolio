@@ -220,7 +220,7 @@ const About = () => {
         <AboutTitle>About Me</AboutTitle>
         <AboutSub>
           I am a Full-Stack Web Developer with a Master&apos;s degree in
-          Sociology and Gender Studies
+          Sociology and Gender Studies.
         </AboutSub>
         <AboutDesc>
           I enjoy the challenge of learning new languages and frameworks. My
@@ -230,11 +230,16 @@ const About = () => {
           researcher. All these qualities contribute to my journey as a lifelong
           learner.
           <br />
-          My main passion is for Front-End and I&apos;m interested in expanding
-          my UI/UX design skills.
+          <br />
+          I am currently wroking at <Link href="https://www.kyndryl.com/ca/en">
+            <a target="_blank" style={{ color: "#8080c9" }}>
+              Kyndryl
+            </a>
+          </Link>, as part of an Early Professional Hire program and learning on the job to become a mainframe systems programmer.
+          <br />
           <br />
           In my spare time I like to enjoy the outdoors and nature any way that
-          I can. I also love working on new knitting/crochet projects.
+          I can. I also love working on various knitting/crochet projects.
         </AboutDesc>
         <AboutLinks>
           <LinkItem>
