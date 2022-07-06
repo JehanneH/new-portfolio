@@ -231,7 +231,7 @@ const About = () => {
           learner.
           <br />
           <br />
-          I am currently wroking at <Link href="https://www.kyndryl.com/ca/en">
+          I am currently working at <Link href="https://www.kyndryl.com/ca/en">
             <a target="_blank" style={{ color: "#8080c9" }}>
               Kyndryl
             </a>
